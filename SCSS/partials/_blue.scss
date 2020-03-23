@@ -1,27 +1,29 @@
-#blue{
-position: relative;
+#blue {
+    position: relative;
     background: transparent linear-gradient(180deg, #000D45 0%, #007FFF 100%) 0% 0% no-repeat padding-box;
-    
-    .blue-top{
-        background-color: #0E7FFF;        
-        h1{
+
+    .blue-top {
+        background-color: #0E7FFF;
+
+        h1 {
             color: #fff;
-            text-align: center;   
+            text-align: center;
             width: 100%;
         }
     }
-    .blue-bottom{
+
+    .blue-bottom {
         background-image: url("/assets/images/Her");
         color: #fff;
 
-        h3{
+        h3 {
             border-top: 1px solid #fff;
             margin-top: 2em;
             width: 70%;
         }
     }
 
-    #truck-img{
+    #truck-img {
         position: absolute;
         top: 0;
         right: 0;

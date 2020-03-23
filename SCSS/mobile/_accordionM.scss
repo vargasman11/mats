@@ -1,5 +1,5 @@
 #accordionM{
-    
+    display: block;
     .card-header-mobile{
         background-color:#197AFC;
         button{
@@ -34,5 +34,14 @@
             font-size: 1.2em;
             border-radius: 10px;
         }
+    }
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+    #accordionM {
+        display: none;
     }
 }
