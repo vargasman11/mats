@@ -7,6 +7,78 @@
 
     .blueM-bg{
             background: transparent linear-gradient(180deg,  #007FFF 0%, #000D45 100% ) 0% 0% no-repeat padding-box;
-
+            .js-flickity {
+                overflow: hidden;
+                position: relative;
+    
+                .gallery-cellM {
+                    position: relative;
+                    width: 28%;
+                    height: 150px;
+                    margin-right: 10px;
+                    background: #8C8;
+                    color: #fff;
+                    border-radius: 5px;
+                    counter-increment: carousel-cell;
+                }
+    
+                .gallery-cellM.is-selected {
+                    background: #03427c;
+                }
+    
+                /* cell number */
+                .gallery-cellM:before {
+                    display: block;
+                    text-align: center;
+                    // content: counter(carousel-cell);
+                    line-height: 200px;
+                    font-size: 80px;
+                    color: white;
+                }
+    
+                .gallery-cellM {
+                    background-color: #002391;
+                    width: 25%;
+                    text-align: center;
+                    margin: 0 5px;
+                    border-radius: 5px;
+                }
+    
+                /* smaller, dark, rounded square */
+                .flickity-button {
+                    background: #333;
+                }
+    
+                .flickity-button:hover {
+                    background: #F90;
+                }
+    
+                .flickity-prev-next-button {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 5px;
+                }
+    
+                /* icon color */
+                .flickity-button-icon {
+                    fill: white;
+                }
+    
+                /* position outside */
+                .flickity-prev-next-button.previous {
+                    // left: -40px;
+                    position: absolute;
+                    top: 40%;
+                    left: 0;
+                }
+    
+                .flickity-prev-next-button.next {
+                    // right: -40px;
+                    position: absolute;
+                    top: 40%;
+                    right: 0%;
+                }
+    
+            }
     }
 }

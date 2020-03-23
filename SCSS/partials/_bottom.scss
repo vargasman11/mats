@@ -1,5 +1,6 @@
 #bottom{
     background: transparent linear-gradient(180deg, #000D45 0%, #007FFF 100%) 0% 0% no-repeat padding-box;
+    display: block;
     // LEFT SIDE
     .left{
         display: flex;
@@ -75,5 +76,13 @@
         img{
             height: 100px;
         }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 780px) {
+
+    #bottom {
+        display: none;
     }
 }

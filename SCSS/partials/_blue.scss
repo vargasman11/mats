@@ -21,6 +21,79 @@
             margin-top: 2em;
             width: 70%;
         }
+
+        .js-flickity {
+            overflow: hidden;
+            position: relative;
+
+            .gallery-cell {
+                position: relative;
+                width: 28%;
+                height: 150px;
+                margin-right: 10px;
+                background: #8C8;
+                border-radius: 5px;
+                counter-increment: carousel-cell;
+            }
+
+            .gallery-cell.is-selected {
+                background: #03427c;
+            }
+
+            /* cell number */
+            .gallery-cell:before {
+                display: block;
+                text-align: center;
+                // content: counter(carousel-cell);
+                line-height: 200px;
+                font-size: 80px;
+                color: white;
+            }
+
+            .gallery-cell {
+                background-color: #002391;
+                width: 25%;
+                text-align: center;
+                margin: 0 5px;
+                border-radius: 5px;
+            }
+
+            /* smaller, dark, rounded square */
+            .flickity-button {
+                background: #333;
+            }
+
+            .flickity-button:hover {
+                background: #F90;
+            }
+
+            .flickity-prev-next-button {
+                width: 30px;
+                height: 30px;
+                border-radius: 5px;
+            }
+
+            /* icon color */
+            .flickity-button-icon {
+                fill: white;
+            }
+
+            /* position outside */
+            .flickity-prev-next-button.previous {
+                // left: -40px;
+                position: absolute;
+                top: 40%;
+                left: 0;
+            }
+
+            .flickity-prev-next-button.next {
+                // right: -40px;
+                position: absolute;
+                top: 40%;
+                right: 0%;
+            }
+
+        }
     }
 
     #truck-img {
