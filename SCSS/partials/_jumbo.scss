@@ -1,0 +1,65 @@
+#jumbo {
+    background-image: url('/assets/images/Hero-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    min-height: 100%;
+    background-position: center center;
+    position: relative;
+
+    .jumbo-top {
+        padding: 5em 0px;
+        text-align: center;
+
+
+        .headline-col {
+            h2 {
+                color: #002275;
+                font-size: 3em;
+                font-family: Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+            }
+        }
+        .span-divider{
+            border-left: 6px solid #fff;
+            min-height: 100px;
+            display: block;
+        }        
+    }
+
+    .jumbo-bottom{
+        text-align: center;
+        a{
+            background-color: #33D133;
+            color: #fff;
+            font-size: 2em;
+            // padding:10px 30px;
+            border-radius: 10px;
+        }
+    }
+
+    .contactJumbo{
+        position: absolute;
+        bottom: 5%;
+        right: 10%;
+        width: 90px;
+        background-color: #33D133;
+        border-radius: 50%;
+        padding-top: 10px;
+        padding-bottom: 8px;
+        text-align: center;
+        color: #fff;
+        font-size: 10px;
+        .chat-icon{
+            font-size: 40px;
+        }            
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    #jumbo {
+        display: none;
+    }
+  
+ }

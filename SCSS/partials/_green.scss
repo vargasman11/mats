@@ -1,0 +1,35 @@
+#green{
+    h1{
+        color: #33D133;
+    }   
+
+    ul{
+        list-style: none;
+        li{
+            color: #797979;
+            font-size: 1.2em;
+            font-weight: bold;
+            svg{
+                color: #007AC5;
+            }            
+        }
+        li:nth-child(2){
+            padding-top: 20px;
+        }
+    }
+
+    .greenApply{
+        background-color: #33D133;
+        text-align: center;
+        padding:  20px 30px;
+
+        a{
+            color: #fff;
+            margin: 0 auto;
+            font-size: 2em;
+            text-transform: uppercase;
+            font-weight: bold;
+            width: 80%;
+        }
+    }
+}

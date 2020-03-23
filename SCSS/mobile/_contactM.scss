@@ -1,0 +1,30 @@
+#contactM{
+    position: relative;
+    img{
+        height: 100px;
+    }
+    .contactJumboM{
+        position: absolute;
+        bottom: 5%;
+        right: 10%;
+        width: 90px;
+        background-color: #33D133;
+        border-radius: 50%;
+        padding-top: 10px;
+        padding-bottom: 8px;
+        text-align: center;
+        color: #fff;
+        font-size: 10px;
+        .chat-icon{
+            font-size: 40px;
+        }            
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    #contactM {
+        display: none;
+    }
+  
+ }

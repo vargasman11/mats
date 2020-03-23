@@ -1,0 +1,55 @@
+#cta {
+    clip-path: polygon(50% 13%, 100% 0, 100% 100%, 0 100%, 0 0);
+    background: transparent linear-gradient(180deg, #007FFF 0%, #000D45 100%) 0% 0% no-repeat padding-box;
+    position: relative;
+
+    h1 {
+        color: #fff;
+        font-size: 2.2em;
+        padding: 20px 0px;
+        text-align: center;
+    }      
+}
+
+#truckIMG {
+    background-image: url("/assets/images/BlueTRuckXD@2x.png");
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+    a {
+        background-color: #33D133;
+        color: #fff;
+        font-size: 1.8em;
+        padding: 15px 40px;
+        border-radius: 15px;
+        z-index: 1000;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -25px);
+        width:30%;
+        text-align: center;
+    }
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    #cta {
+        h1 {
+            font-size: 1.5em;
+        }      
+    }
+
+    #truckIMG {
+        height: 250px !important;
+        background-position: center;
+        a {
+            font-size: 1.3em;
+            width: 60%;
+            text-align: center;
+        }
+    }    
+}

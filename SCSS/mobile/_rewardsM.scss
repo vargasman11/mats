@@ -1,0 +1,27 @@
+#rewardsM {
+    display: none;
+    h1 {
+        color: #022ab1;
+    }
+    ul {
+        li {
+            list-style: square !important;
+            color: #022ab1;
+            font-weight: bold;
+            padding-top: 15px;
+
+            .listBlue {
+                color: #8f8f8f;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+
+    #rewardsM {
+        display: block;
+    }
+}
