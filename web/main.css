@@ -404,3 +404,52 @@
 @media (min-width: 768px) {
   #accordionM {
     display: none; } }
+
+#bottomM {
+  background: transparent linear-gradient(180deg, #000D45 0%, #007FFF 100%) 0% 0% no-repeat padding-box; }
+  #bottomM form input {
+    background-color: #D9D9D9; }
+  #bottomM form button {
+    background-color: #33D133;
+    color: #fff;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px; }
+  #bottomM ul {
+    list-style: none;
+    padding-bottom: 20px;
+    padding-left: 0px; }
+    #bottomM ul li {
+      display: inline-block;
+      padding: 0px 7px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: capitalize; }
+      #bottomM ul li .green-number {
+        color: #33D133; }
+      #bottomM ul li svg {
+        color: #33D133;
+        transform: translateY(-40%);
+        font-size: 2em; }
+      #bottomM ul li img {
+        height: 50px;
+        transform: translateY(-20%); }
+    #bottomM ul .borderRightM {
+      border-right: 1px solid #fff;
+      padding-right: 15px; }
+  #bottomM h4 {
+    color: #fff; }
+  #bottomM .mobile-icons {
+    list-style: none;
+    padding-bottom: 20px;
+    padding-left: 0px; }
+    #bottomM .mobile-icons li {
+      display: inline-block;
+      padding: 0px 7px; }
+      #bottomM .mobile-icons li svg {
+        color: #83D3CB !important;
+        font-size: 1.5em; }
+  #bottomM a {
+    color: #fff; }
+  #bottomM .logoM {
+    height: 50px;
+    transform: translateX(50%); }
