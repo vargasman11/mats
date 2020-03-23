@@ -1,0 +1,38 @@
+#accordionM{
+    
+    .card-header-mobile{
+        background-color:#197AFC;
+        button{
+            color: #fff;
+        }
+    }
+
+    .bg-white{
+        p{
+            color: #2E3B5F;
+            font-weight: bold;
+        }
+
+        ul{
+            list-style: square;
+            li{
+                color: #197AFC;
+                font-weight: bold;
+                .green{
+                color: #33D133;                
+                }
+                .gray{
+                    color: #707070;
+                    font-weight: normal;
+                }
+            }
+        }
+        a{
+            background-color: #33D133;
+            color: #fff;
+            padding: 10px 25px;
+            font-size: 1.2em;
+            border-radius: 10px;
+        }
+    }
+}

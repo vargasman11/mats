@@ -196,6 +196,31 @@
     text-transform: uppercase;
     font-weight: bold; }
 
+#accordion .card {
+  background-color: #197AFC; }
+  #accordion .card button {
+    color: #fff; }
+
+#accordion .collapse p {
+  color: #2E3B5F;
+  font-weight: bold; }
+
+#accordion .collapse ul li {
+  color: #197AFC;
+  font-weight: bold; }
+  #accordion .collapse ul li .green {
+    color: #33D133; }
+  #accordion .collapse ul li .gray {
+    color: #707070;
+    font-weight: normal; }
+
+#accordion .collapse a {
+  background-color: #33D133;
+  color: #fff;
+  padding: 10px 25px;
+  font-size: 1.2em;
+  border-radius: 10px; }
+
 #navM {
   display: none; }
   #navM #navM__top-row {
@@ -290,3 +315,30 @@
 @media (max-width: 768px) {
   #rewardsM {
     display: block; } }
+
+#accordionM .card-header-mobile {
+  background-color: #197AFC; }
+  #accordionM .card-header-mobile button {
+    color: #fff; }
+
+#accordionM .bg-white p {
+  color: #2E3B5F;
+  font-weight: bold; }
+
+#accordionM .bg-white ul {
+  list-style: square; }
+  #accordionM .bg-white ul li {
+    color: #197AFC;
+    font-weight: bold; }
+    #accordionM .bg-white ul li .green {
+      color: #33D133; }
+    #accordionM .bg-white ul li .gray {
+      color: #707070;
+      font-weight: normal; }
+
+#accordionM .bg-white a {
+  background-color: #33D133;
+  color: #fff;
+  padding: 10px 25px;
+  font-size: 1.2em;
+  border-radius: 10px; }
