@@ -1,4 +1,5 @@
 #blueM{
+    // display: none;
     h1{
         background-color: #0E7FFF;
         color: #fff;
@@ -7,7 +8,7 @@
 
     .blueM-bg{
             background: transparent linear-gradient(180deg,  #007FFF 0%, #000D45 100% ) 0% 0% no-repeat padding-box;
-            .js-flickity {
+            .galleryM {
                 overflow: hidden;
                 position: relative;
     
@@ -80,5 +81,22 @@
                 }
     
             }
+    }
+
+    .blue-text-section{
+        color: #fff;
+        .left-text{
+            text-align: right;
+        }
+        .right-text{
+            text-align: left;
+        }
+    }
+}
+
+// hide on bigger screens
+@media(min-width:880px) {
+    #blueM { 
+        display: none;
     }
 }

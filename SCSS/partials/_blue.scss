@@ -98,8 +98,66 @@
 
     #truck-img {
         position: absolute;
-        top: 0;
-        right: 0;
-        transform: translateY(70%);
+        top: 20%;
+        right: 10%;
+        transform: translateY(20%);
+        height: 600px;
+    }
+}
+
+// super large screens
+@media(max-width:1400px) {
+    #blue {
+        #truck-img {
+            position: absolute;
+            top: 20%;
+            right: 10%;
+            transform: translateY(20%);
+            height: 500px;
+        }
+    }
+}
+
+@media(max-width:1400px) {
+    #blue {
+        #truck-img {
+            position: absolute;
+            top: 20%;
+            right: 5%;
+            transform: translateY(20%);
+            height: 450px;
+        }
+    }
+}
+
+@media(max-width:1000px) {
+    #blue {
+        #truck-img {
+            position: absolute;
+            top: 35%;
+            right: 5%;
+            transform: translateY(20%);
+            height: 350px;
+        }
+    }
+}
+
+@media(max-width:880px) {
+    #blue {
+        #truck-img {
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translateY(25%);
+            height: 250px;
+        }
+    }
+}
+
+// HIDE ON CELL
+
+@media(max-width:880px) {
+    #blue { 
+        display: none;
     }
 }

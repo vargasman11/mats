@@ -144,9 +144,46 @@
         right: 0%; }
   #blue #truck-img {
     position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateY(70%); }
+    top: 20%;
+    right: 10%;
+    transform: translateY(20%);
+    height: 600px; }
+
+@media (max-width: 1400px) {
+  #blue #truck-img {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    transform: translateY(20%);
+    height: 500px; } }
+
+@media (max-width: 1400px) {
+  #blue #truck-img {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translateY(20%);
+    height: 450px; } }
+
+@media (max-width: 1000px) {
+  #blue #truck-img {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    transform: translateY(20%);
+    height: 350px; } }
+
+@media (max-width: 880px) {
+  #blue #truck-img {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(25%);
+    height: 250px; } }
+
+@media (max-width: 880px) {
+  #blue {
+    display: none; } }
 
 #rewards h1 {
   color: #022ab1; }
@@ -409,14 +446,14 @@
 
 #blueM .blueM-bg {
   background: transparent linear-gradient(180deg, #007FFF 0%, #000D45 100%) 0% 0% no-repeat padding-box; }
-  #blueM .blueM-bg .js-flickity {
+  #blueM .blueM-bg .galleryM {
     overflow: hidden;
     position: relative;
     /* cell number */
     /* smaller, dark, rounded square */
     /* icon color */
     /* position outside */ }
-    #blueM .blueM-bg .js-flickity .gallery-cellM {
+    #blueM .blueM-bg .galleryM .gallery-cellM {
       position: relative;
       width: 28%;
       height: 150px;
@@ -425,38 +462,49 @@
       color: #fff;
       border-radius: 5px;
       counter-increment: carousel-cell; }
-    #blueM .blueM-bg .js-flickity .gallery-cellM.is-selected {
+    #blueM .blueM-bg .galleryM .gallery-cellM.is-selected {
       background: #03427c; }
-    #blueM .blueM-bg .js-flickity .gallery-cellM:before {
+    #blueM .blueM-bg .galleryM .gallery-cellM:before {
       display: block;
       text-align: center;
       line-height: 200px;
       font-size: 80px;
       color: white; }
-    #blueM .blueM-bg .js-flickity .gallery-cellM {
+    #blueM .blueM-bg .galleryM .gallery-cellM {
       background-color: #002391;
       width: 25%;
       text-align: center;
       margin: 0 5px;
       border-radius: 5px; }
-    #blueM .blueM-bg .js-flickity .flickity-button {
+    #blueM .blueM-bg .galleryM .flickity-button {
       background: #333; }
-    #blueM .blueM-bg .js-flickity .flickity-button:hover {
+    #blueM .blueM-bg .galleryM .flickity-button:hover {
       background: #F90; }
-    #blueM .blueM-bg .js-flickity .flickity-prev-next-button {
+    #blueM .blueM-bg .galleryM .flickity-prev-next-button {
       width: 30px;
       height: 30px;
       border-radius: 5px; }
-    #blueM .blueM-bg .js-flickity .flickity-button-icon {
+    #blueM .blueM-bg .galleryM .flickity-button-icon {
       fill: white; }
-    #blueM .blueM-bg .js-flickity .flickity-prev-next-button.previous {
+    #blueM .blueM-bg .galleryM .flickity-prev-next-button.previous {
       position: absolute;
       top: 40%;
       left: 0; }
-    #blueM .blueM-bg .js-flickity .flickity-prev-next-button.next {
+    #blueM .blueM-bg .galleryM .flickity-prev-next-button.next {
       position: absolute;
       top: 40%;
       right: 0%; }
+
+#blueM .blue-text-section {
+  color: #fff; }
+  #blueM .blue-text-section .left-text {
+    text-align: right; }
+  #blueM .blue-text-section .right-text {
+    text-align: left; }
+
+@media (min-width: 880px) {
+  #blueM {
+    display: none; } }
 
 #rewardsM {
   display: none; }
