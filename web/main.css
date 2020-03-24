@@ -439,68 +439,79 @@
   #contactM {
     display: none; } }
 
-#blueM h1 {
-  background-color: #0E7FFF;
-  color: #fff;
-  text-align: center; }
-
-#blueM .blueM-bg {
-  background: transparent linear-gradient(180deg, #007FFF 0%, #000D45 100%) 0% 0% no-repeat padding-box; }
-  #blueM .blueM-bg .galleryM {
-    overflow: hidden;
-    position: relative;
-    /* cell number */
-    /* smaller, dark, rounded square */
-    /* icon color */
-    /* position outside */ }
-    #blueM .blueM-bg .galleryM .gallery-cellM {
+#blueM {
+  padding: 20px 0px;
+  position: relative; }
+  #blueM h1 {
+    background-color: #0E7FFF;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0px; }
+  #blueM .blueM-bg {
+    background: transparent linear-gradient(180deg, #007FFF 0%, #000D45 100%) 0% 0% no-repeat padding-box; }
+    #blueM .blueM-bg .galleryM {
+      overflow: hidden;
       position: relative;
-      width: 28%;
-      height: 150px;
-      margin-right: 10px;
-      background: #8C8;
-      color: #fff;
-      border-radius: 5px;
-      counter-increment: carousel-cell; }
-    #blueM .blueM-bg .galleryM .gallery-cellM.is-selected {
-      background: #03427c; }
-    #blueM .blueM-bg .galleryM .gallery-cellM:before {
-      display: block;
-      text-align: center;
-      line-height: 200px;
-      font-size: 80px;
-      color: white; }
-    #blueM .blueM-bg .galleryM .gallery-cellM {
-      background-color: #002391;
-      width: 25%;
-      text-align: center;
-      margin: 0 5px;
-      border-radius: 5px; }
-    #blueM .blueM-bg .galleryM .flickity-button {
-      background: #333; }
-    #blueM .blueM-bg .galleryM .flickity-button:hover {
-      background: #F90; }
-    #blueM .blueM-bg .galleryM .flickity-prev-next-button {
-      width: 30px;
-      height: 30px;
-      border-radius: 5px; }
-    #blueM .blueM-bg .galleryM .flickity-button-icon {
-      fill: white; }
-    #blueM .blueM-bg .galleryM .flickity-prev-next-button.previous {
-      position: absolute;
-      top: 40%;
-      left: 0; }
-    #blueM .blueM-bg .galleryM .flickity-prev-next-button.next {
-      position: absolute;
-      top: 40%;
-      right: 0%; }
-
-#blueM .blue-text-section {
-  color: #fff; }
-  #blueM .blue-text-section .left-text {
-    text-align: right; }
-  #blueM .blue-text-section .right-text {
-    text-align: left; }
+      /* cell number */
+      /* smaller, dark, rounded square */
+      /* icon color */
+      /* position outside */ }
+      #blueM .blueM-bg .galleryM .gallery-cellM {
+        position: relative;
+        width: 28%;
+        height: 150px;
+        margin-right: 10px;
+        background: #8C8;
+        color: #fff;
+        border-radius: 5px;
+        counter-increment: carousel-cell; }
+      #blueM .blueM-bg .galleryM .gallery-cellM.is-selected {
+        background: #03427c; }
+      #blueM .blueM-bg .galleryM .gallery-cellM:before {
+        display: block;
+        text-align: center;
+        line-height: 200px;
+        font-size: 80px;
+        color: white; }
+      #blueM .blueM-bg .galleryM .gallery-cellM {
+        background-color: #002391;
+        width: 25%;
+        text-align: center;
+        margin: 0 5px;
+        border-radius: 5px; }
+      #blueM .blueM-bg .galleryM .flickity-button {
+        background: #333; }
+      #blueM .blueM-bg .galleryM .flickity-button:hover {
+        background: #F90; }
+      #blueM .blueM-bg .galleryM .flickity-prev-next-button {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px; }
+      #blueM .blueM-bg .galleryM .flickity-button-icon {
+        fill: white; }
+      #blueM .blueM-bg .galleryM .flickity-prev-next-button.previous {
+        position: absolute;
+        top: 40%;
+        left: 0; }
+      #blueM .blueM-bg .galleryM .flickity-prev-next-button.next {
+        position: absolute;
+        top: 40%;
+        right: 0%; }
+  #blueM .blue-text-section {
+    color: #fff; }
+    #blueM .blue-text-section .left-text {
+      text-align: right; }
+      #blueM .blue-text-section .left-text h2 {
+        font-size: 1.7em !important;
+        border-right: 1px solid #fff;
+        padding-right: 20px; }
+    #blueM .blue-text-section .right-text {
+      text-align: left; }
+      #blueM .blue-text-section .right-text h2 {
+        font-size: 1.5em !important; }
+  #blueM #truck-imgM {
+    position: absolute;
+    transform: translate(7%, -75%); }
 
 @media (min-width: 880px) {
   #blueM {
