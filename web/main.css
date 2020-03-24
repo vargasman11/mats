@@ -621,3 +621,24 @@
 @media (max-width: 780px) {
   #bottomM {
     display: block; } }
+
+#searchController {
+  background-image: url("assets/images/jobSearch.jpg");
+  background-size: cover; }
+  #searchController .row {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    filter: grayscale(30%); }
+    #searchController .row h1 {
+      color: #fff; }
+    #searchController .row input {
+      width: 100%;
+      background-color: #EAEAEA;
+      border-radius: 5px;
+      padding: 2px; }
+    #searchController .row button {
+      background-color: #8D8D8D;
+      border-width: 0;
+      border-radius: 5px;
+      color: #fff;
+      padding: 10px 35px; }
