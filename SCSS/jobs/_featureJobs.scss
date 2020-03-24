@@ -1,0 +1,36 @@
+#featureJobs {
+    background-color: #E2E2E2;
+
+
+    .fjobs-card {
+        background-color: #F2F2F2;
+        margin: .5em 0px;
+        .fjobs-card-header {
+            background-color: #F2F2F2;
+            button{
+                color: #33D133;
+                font-weight: bold;
+            }
+        }
+
+        .card-body{
+            background-color: #e7e7e7;
+            text-align: center;
+            .fjobsHeader{
+                color: #33D133;
+                font-size: 1em;
+            }
+            ul{
+                list-style: none;
+                text-align: left;
+                li{
+                    color: #797979;
+                    font-weight: bold;
+                    svg{
+                        color: #007AC5;
+                    }
+                }
+            }
+        }
+    }
+}

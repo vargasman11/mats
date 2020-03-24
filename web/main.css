@@ -259,7 +259,8 @@
     padding-top: 20px; }
 
 #green .greenApply {
-  background-color: #33D133;
+  background: #95fd95;
+  background: linear-gradient(180deg, #95fd95 0%, #33d133 48%);
   text-align: center;
   padding: 20px 30px; }
   #green .greenApply a {
@@ -642,3 +643,46 @@
       border-radius: 5px;
       color: #fff;
       padding: 10px 35px; }
+
+#featureJobs {
+  background-color: #E2E2E2; }
+  #featureJobs .fjobs-card {
+    background-color: #F2F2F2;
+    margin: .5em 0px; }
+    #featureJobs .fjobs-card .fjobs-card-header {
+      background-color: #F2F2F2; }
+      #featureJobs .fjobs-card .fjobs-card-header button {
+        color: #33D133;
+        font-weight: bold; }
+    #featureJobs .fjobs-card .card-body {
+      background-color: #e7e7e7;
+      text-align: center; }
+      #featureJobs .fjobs-card .card-body .fjobsHeader {
+        color: #33D133;
+        font-size: 1em; }
+      #featureJobs .fjobs-card .card-body ul {
+        list-style: none;
+        text-align: left; }
+        #featureJobs .fjobs-card .card-body ul li {
+          color: #797979;
+          font-weight: bold; }
+          #featureJobs .fjobs-card .card-body ul li svg {
+            color: #007AC5; }
+
+#greenApplyJobs {
+  background: #95fd95;
+  background: linear-gradient(180deg, #95fd95 0%, #33d133 48%);
+  padding: 1em; }
+  #greenApplyJobs a {
+    color: #fff;
+    font-size: 2.1em;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center; }
+
+@media (max-width: 768px) {
+  #greenApplyJobs a {
+    font: 1em;
+    width: 80%; } }
