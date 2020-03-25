@@ -1,31 +1,35 @@
-#accordion{
-    .card{
-        background-color:#197AFC;
-        button{
+#accordion {
+    .card {
+        background-color: #197AFC;
+
+        button {
             color: #fff;
         }
     }
 
-    .collapse{
-        p{
+    .collapse {
+        p {
             color: #2E3B5F;
             font-weight: bold;
         }
 
-        ul{
-            li{
+        ul {
+            li {
                 color: #197AFC;
                 font-weight: bold;
-                .green{
-                color: #33D133;                
+
+                .green {
+                    color: #33D133;
                 }
-                .gray{
+
+                .gray {
                     color: #707070;
                     font-weight: normal;
                 }
             }
         }
-        a{
+
+        a {
             background-color: #33D133;
             color: #fff;
             padding: 10px 25px;
@@ -33,6 +37,7 @@
             border-radius: 10px;
         }
     }
+
 }
 
 // Medium devices (tablets, 768px and up)

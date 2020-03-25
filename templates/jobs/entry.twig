@@ -1,0 +1,85 @@
+{% include './partials/header' %}
+
+{# NAVIGATION #}
+{% include '/partials/nav' %}
+{% include '/mobile/navM' %}
+
+{# Search controller here #}
+{% include 'jobs/controller/search' %}
+
+{% block main %}
+
+
+<div class="containt-fluid" id="jobEntry">
+    <div class="row">
+        <div class="col-sm-12 col-md-8 offset-md-2">
+            <h1>{{entry.city}}, {{entry.jobAddress.state}}</h1>
+            <h2>{{entry.truckType}}</h2>
+            <p>{{entry.jobDetails}}</p>
+
+            <p class="benefits">Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. Esse nam hic deleniti eius nemo
+            iste earum velit quibusdam, laboriosam unde, recusandae ad quod. 
+            Rerum omnis dolore numquam cupiditate
+            tempora rem nostrum possimus vero.</p>
+
+            <ul>
+                <li><span class="grey-text">Lorem ipsum dolor sit
+                 amet consectetur adipisicing elit. Voluptatem fugit
+                culpa eum!</span></li>
+
+                <li><span class="grey-text">Lorem ipsum dolor sit
+                 amet consectetur adipisicing elit. Voluptatem fugit
+                culpa eum!</span></li>
+
+                <li><span class="grey-text">Lorem ipsum dolor sit
+                 amet consectetur adipisicing elit. Voluptatem fugit
+                culpa eum!</span></li>
+
+                <li><span class="grey-text">Lorem ipsum dolor sit
+                 amet consectetur adipisicing elit. Voluptatem fugit
+                culpa eum!</span></li>
+
+                <li><span class="grey-text">Lorem ipsum dolor sit
+                 amet consectetur adipisicing elit. Voluptatem fugit
+                culpa eum!</span></li>
+
+                <li><span class="grey-text">Lorem ipsum dolor sit
+                 amet consectetur adipisicing elit. Voluptatem fugit
+                culpa eum!</span></li>
+
+                <li><span class="grey-text">Lorem ipsum dolor sit
+                 amet consectetur adipisicing elit. Voluptatem fugit
+                culpa eum!</span></li>
+
+                <li><span class="grey-text">Lorem ipsum dolor sit
+                 amet consectetur adipisicing elit. Voluptatem fugit
+                culpa eum!</span></li>
+
+                <li><span class="grey-text">Lorem ipsum dolor sit
+                 amet consectetur adipisicing elit. Voluptatem fugit
+                culpa eum!</span></li>
+
+                <li><span class="grey-text">Lorem ipsum dolor sit
+                 amet consectetur adipisicing elit. Voluptatem fugit
+                culpa eum!</span></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{# Green jobs section #}
+{% include 'jobs/partials/greenApply' %}
+
+
+{# bottom #}
+{% include 'partials/bottom' %}
+{% include 'mobile/bottomM' %}
+
+
+
+{% include 'partials/footer' %}
