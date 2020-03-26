@@ -1,3 +1,6 @@
+{% include 'partials/header' %}
+
+
 {% set form = craft.freeform.form("form") %}
 
 
@@ -48,7 +51,7 @@
             </div>
     
     <div class="form-group">
-    {# {{ form.get('37zaG92gw').render }} #}
+    {{ form.get('37zaG92gw').render }}
     </div>
 
     <div class="form-group">
@@ -92,9 +95,9 @@
     </div>
 
     <div class="form-group text-center">
-        {# {{ form.get('nd8rlG5Gv').render({
+        {{ form.get('rMmkJ3VAV').render({
               class: "btn btn-lg btn-success",
-        }) }} #}
+        }) }}
     </div>
     
     </div>
@@ -104,5 +107,148 @@
 {% endif %}        
 </div>
 
+{# PAGE 2 #}
+{% if form.currentPage.index == 1 %}        
+     <div class="gray-form form-style utility-site-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 pt-5 pb-5">
+
+            {# PROGRESS BAR #}
+            <div class="form-group text-center">
+            <label for="file">Application Progress</label> <br>
+            <progress class="progess-bar" id="file" max="100" value="50"> Step 2 </progress>
+            </div>
+    
+
+    <div class="form-group">
+    {{ form.get('QrnEGrVMn').render }}
+    </div>
+
+
+    <div class="form-group">
+ 	<label>{{ cdla.label }}</label>
+     <br>
+	{% for option in cdla.options %}
+        <input type="radio" name="cdla" value="{{option.value}}">&nbsp; <span class="text-white">{{option.label}}</span> &nbsp;
+    {% endfor %}
+	{{ cdla.renderErrors() }}
+    </div>
+
+    <div class="form-group">
+  <label>{{ cdlaYears.label }}</label>
+	<select class="custom-select" name="{{cdlaYears.handle}}" id="{{cdlaYears.handle}}">
+        {% for option in cdlaYears.options %}        
+            <option value="{{option.value}}">&nbsp; {{option.label}}</option>
+        {% endfor %}
+    </select>
+	{{ cdlaYears.renderErrors() }}
+    </div>
+
+
+	 <div class="form-group text-center">
+        {{ form.get('jRpqWm1zb').render({
+              class: "btn btn-lg btn-success mx-2",
+        }) }}
+    </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+{% endif %}
+
+
+{# PAGE 3 #}
+{% if form.currentPage.index == 2 %}
+    <div class="black-form form-style utility-site-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 pt-5 pb-5">
+
+            {# PROGRESS BAR #}
+            <div class="form-group text-center">
+            <label for="file">Application Progress</label> <br>
+            <progress class="progess-bar" id="file" max="100" value="75"> Step 3 </progress>
+            </div>
+    
+    <div class="form-group">
+    {{ form.get('Rq5E3qvzV').render }}
+    </div>
+    
+
+    <div class="form-group">
+    <label>{{ driveRecord.label }}</label> <br> 
+	{% for option in driveRecord.options %}
+        <input type="radio" name="driveRecord" value="{{option.value}}"> &nbsp;<span class="text-white">{{option.label}}</span> &nbsp;
+    {% endfor %}
+	{{ driveRecord.renderErrors() }}
+    </div>
+
+    <div class="form-group">
+    <label>{{ terminal.label }}</label>
+	<select class="custom-select" name="{{terminal.handle}}" id="{{terminal.handle}}">
+        {% for option in terminal.options %}        
+            <option value="{{option.value}}">{{option.label}}</option>
+        {% endfor %}
+    </select>
+	{{ terminal.renderErrors() }}
+    </div>
+
+    <div class="form-group text-center">
+        {{ form.get('vG8AKJMRD').render({
+              class: "btn btn-lg btn-success mx-2",
+        }) }}
+    </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+{% endif %}
+
+{# PAGE 4 #}
+{% if form.currentPage.index == 3 %}
+<div class="gray-form form-style utility-site-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 pt-5 pb-5">
+
+               {# PROGRESS BAR #}
+            <div class="form-group text-center">
+            <label for="file">Application Progress</label> <br>
+            <progress class="progess-bar" id="file" max="100" value="90"> Step 4 </progress>
+            </div>
+
+    <div class="form-group">
+    {{ form.get('QrnEGmNE8').render }}
+    </div>
+                
+
+    <div class="form-group">
+    <label for="{{consent}}">{{consent.label}}</label>
+    <input type="checkbox" name="{{consent}}" value="{{consent.value}}">
+    </div>
+
+      <div class="form-group text-center">
+        {{ form.get('8RGzYqDm6').render({
+              class: "btn btn-lg btn-success mx-2",
+        }) }}
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+{% endif %}    
+
+            </div>
+        </div>
+    </div>
+</div>
+
 {{ form.renderClosingTag }}
 
+
+{% include 'partials/footer' %}

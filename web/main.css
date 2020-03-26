@@ -890,3 +890,25 @@
       #searchResults .pagination li a {
         color: #33D133;
         background-color: #fff; }
+
+#shortform {
+  display: flex; }
+
+.black-form {
+  background: #3e4040;
+  background: -moz-linear-gradient(25deg, #3e4040 0%, #192326 100%);
+  background: -webkit-linear-gradient(25deg, #3e4040 0%, #192326 100%);
+  background: linear-gradient(25deg, #3e4040 0%, #192326 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3e4040", endColorstr="#192326", GradientType=1); }
+
+.gray-form {
+  background: #5C5C5C;
+  background: -moz-linear-gradient(45deg, #5C5C5C 0%, #637076 100%);
+  background: -webkit-linear-gradient(45deg, #5C5C5C 0%, #637076 100%);
+  background: linear-gradient(45deg, #5C5C5C 0%, #637076 100%); }
+
+.green-form {
+  background-color: #76C168; }
+
+.form-style label {
+  color: #fff; }
