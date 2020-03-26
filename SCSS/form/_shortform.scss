@@ -1,16 +1,46 @@
 #shortform {
-    display: flex;
+    display: flex;    
 }
+
+select, 
+input{
+    background-color: #AAAAAA !important;
+    border: solid 1px #aaaaaa !important;
+}
+
 
 .blue-form {
     background: rgb(57, 69, 114);
     background: linear-gradient(63deg, rgba(57, 69, 114, 1) 0%, rgba(100, 152, 174, 1) 64%);
+    
+        // BUTTON STYLE
+        .bt-green:first-of-type{
+            border: 1px solid  #33D133;
+            color: #fff;
+            background-color: inherit !important;
+        }
+        .bt-green:nth-of-type(2){
+            background-color: #33D133;
+            color: #fff;
+        }
 }
+
 
 .dark-form {
 
     background: rgb(2, 22, 39);
     background: linear-gradient(149deg, rgba(2, 22, 39, 1) 0%, rgba(44, 47, 91, 1) 53%);
+
+        // BUTTON STYLE
+    .bt-green:first-of-type{
+        border: 1px solid  #33D133;
+        color: #fff;
+        background-color: inherit !important;
+    }
+    .bt-green:nth-of-type(2){
+        background-color: #33D133;
+        color: #fff;
+    }
 }
 
 .formLogo {
@@ -66,4 +96,10 @@
     .li-text {
         color: #fff !important;
     }
+}
+
+// BUTTON STYLE
+.btn-green{
+    background-color: #33D133;
+    color: #fff;
 }

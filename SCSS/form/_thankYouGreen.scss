@@ -24,6 +24,17 @@
             text-align: center;
         }
 
+        .buttonRow{
+            .btn-success{
+                background-color: #33D133;
+            }
+            .rateSite{
+                font-size: .6em;
+                // font-weight: bold;
+                color: #fff;
+            }
+        }
+
         .socialThankYou {
             margin-top: 3em;
             ul{

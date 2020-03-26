@@ -454,7 +454,7 @@
     display: none; } }
 
 #blueM {
-  padding: 20px 0px;
+  padding: 0px;
   position: relative; }
   #blueM h1 {
     background-color: #0E7FFF;
@@ -894,13 +894,32 @@
 #shortform {
   display: flex; }
 
+select,
+input {
+  background-color: #AAAAAA !important;
+  border: solid 1px #aaaaaa !important; }
+
 .blue-form {
   background: #394572;
   background: linear-gradient(63deg, #394572 0%, #6498ae 64%); }
+  .blue-form .bt-green:first-of-type {
+    border: 1px solid  #33D133;
+    color: #fff;
+    background-color: inherit !important; }
+  .blue-form .bt-green:nth-of-type(2) {
+    background-color: #33D133;
+    color: #fff; }
 
 .dark-form {
   background: #021627;
   background: linear-gradient(149deg, #021627 0%, #2c2f5b 53%); }
+  .dark-form .bt-green:first-of-type {
+    border: 1px solid  #33D133;
+    color: #fff;
+    background-color: inherit !important; }
+  .dark-form .bt-green:nth-of-type(2) {
+    background-color: #33D133;
+    color: #fff; }
 
 .formLogo {
   display: inherit;
@@ -937,6 +956,10 @@
 .progress-indicator .li-text {
   color: #fff !important; }
 
+.btn-green {
+  background-color: #33D133;
+  color: #fff; }
+
 #thankYouGreen .liteGreenBG {
   background-color: #2EB53C;
   color: #fff; }
@@ -953,6 +976,11 @@
   #thankYouGreen .gradientBG p {
     color: #fff;
     text-align: center; }
+  #thankYouGreen .gradientBG .buttonRow .btn-success {
+    background-color: #33D133; }
+  #thankYouGreen .gradientBG .buttonRow .rateSite {
+    font-size: .6em;
+    color: #fff; }
   #thankYouGreen .gradientBG .socialThankYou {
     margin-top: 3em; }
     #thankYouGreen .gradientBG .socialThankYou ul {
