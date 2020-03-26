@@ -894,21 +894,51 @@
 #shortform {
   display: flex; }
 
-.black-form {
-  background: #3e4040;
-  background: -moz-linear-gradient(25deg, #3e4040 0%, #192326 100%);
-  background: -webkit-linear-gradient(25deg, #3e4040 0%, #192326 100%);
-  background: linear-gradient(25deg, #3e4040 0%, #192326 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3e4040", endColorstr="#192326", GradientType=1); }
+.blue-form {
+  background: #394572;
+  background: linear-gradient(63deg, #394572 0%, #6498ae 64%); }
 
-.gray-form {
-  background: #5C5C5C;
-  background: -moz-linear-gradient(45deg, #5C5C5C 0%, #637076 100%);
-  background: -webkit-linear-gradient(45deg, #5C5C5C 0%, #637076 100%);
-  background: linear-gradient(45deg, #5C5C5C 0%, #637076 100%); }
+.dark-form {
+  background: #021627;
+  background: linear-gradient(149deg, #021627 0%, #2c2f5b 53%); }
+
+.formLogo {
+  display: inherit;
+  margin: 0 auto; }
+
+.blockquote {
+  color: #fff;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 4em; }
+  .blockquote .small {
+    font-size: .6em; }
+    .blockquote .small .line {
+      display: block;
+      border: solid 1px #fff;
+      float: right;
+      width: 50%;
+      transform: translateY(400%);
+      margin-left: -30px; }
+  .blockquote .bold {
+    font-weight: bold; }
+  .blockquote .blockquote-footer {
+    color: #fff !important;
+    float: right;
+    font-size: 12px !important;
+    font-weight: bold; }
 
 .green-form {
   background-color: #76C168; }
 
 .form-style label {
   color: #fff; }
+
+#thankYouGreen .liteGreenBG {
+  background-color: #2EB53C;
+  color: #fff; }
+
+#thankYouGreen .darkGreen-bg {
+  background-color: #0E8E20; }
+  #thankYouGreen .darkGreen-bg img {
+    height: 300px; }

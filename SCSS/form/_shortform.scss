@@ -1,0 +1,59 @@
+#shortform {
+    display: flex;
+}
+
+.blue-form {
+    background: rgb(57, 69, 114);
+    background: linear-gradient(63deg, rgba(57, 69, 114, 1) 0%, rgba(100, 152, 174, 1) 64%);
+}
+
+.dark-form {
+
+    background: rgb(2, 22, 39);
+    background: linear-gradient(149deg, rgba(2, 22, 39, 1) 0%, rgba(44, 47, 91, 1) 53%);
+}
+
+.formLogo{
+    display: inherit;
+    margin: 0 auto;
+}
+
+//   BLOCK QUOTE SECTION
+.blockquote{
+    color: #fff;
+    width: 70%;
+    margin: 0 auto;      
+    margin-bottom: 4em;
+    .small{
+        font-size: .6em;
+        .line{
+          display: block;
+          border: solid 1px #fff;
+          float: right;
+          width: 50%;
+          transform: translateY(400%);
+          margin-left:-30px ;
+        }
+        
+    }
+    .bold{
+        font-weight: bold;
+    }
+    .blockquote-footer{
+        color: #fff !important;
+        float: right;
+        font-size: 12px !important;
+        font-weight: bold;
+    }
+}
+
+// SUCCESS BACKGROUND
+.green-form {
+    background-color: #76C168;
+}
+
+.form-style {
+    label {
+        color: #fff;
+    }
+}
