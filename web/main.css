@@ -379,6 +379,10 @@
     #navM #navM__top-row #navLogo {
       height: 40px;
       margin-top: -10px; }
+    #navM #navM__top-row button {
+      border: none; }
+    #navM #navM__top-row button:focus {
+      outline: none; }
 
 .mobileContainerDrop {
   position: absolute;

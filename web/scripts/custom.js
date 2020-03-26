@@ -1,3 +1,5 @@
+
+// LOTTIE SCRIPTS
 // apply in the homepage
 var apply = bodymovin.loadAnimation({
     container: document.getElementById('applyLottie'), // Required

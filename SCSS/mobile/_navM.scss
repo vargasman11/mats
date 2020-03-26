@@ -7,6 +7,12 @@
             height: 40px;    
             margin-top: -10px;        
         }
+        button{
+            border: none;
+        }
+        button:focus{
+            outline: none;
+        }
     }
 }
 
