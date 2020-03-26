@@ -1,0 +1,108 @@
+{% set form = craft.freeform.form("form") %}
+
+
+{# RENDER FORM #}
+{{ form.renderTag({
+    returnUrl: "pages/thanks",
+    class:"utility-site-content"
+    }) }}
+
+	{% if form.hasErrors %}
+		<div class="freeform-form-has-errors">
+			{{ "There was an error submitting this form"|t }}
+			{% if form.errors|length %}
+				<ul>
+					{% for error in form.errors %}
+						<li>{{ error }}</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+		</div>
+	{% endif %}
+
+
+{# SELECT FORM ELEMENTS INTO VARIABLES #}
+{% set firstName = form.get("firstName") %}
+{% set lastName = form.get("lastName") %}
+{% set cellPhone = form.get('cellPhone') %}
+{% set email = form.get('email') %}
+{% set city = form.get('city') %}
+{% set state = form.get('state') %}
+{% set cdla = form.get('cdla') %}
+{% set cdlaYears = form.get('cdlaYears') %}
+{% set driveRecord = form.get('driveRecord') %}
+{% set terminal = form.get('terminal') %}
+{% set consent = form.get('consent') %}
+
+{# PAGE1 #}
+{% if form.currentPage.index == 0 %} 
+    <div class="black-form form-style utility-site-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 pt-5 pb-5">
+
+            {# PROGRESS BAR #}
+            <div class="form-group text-center">
+            <label for="file">Application Progress</label> <br>
+            <progress class="progess-bar" id="file" max="100" value="25"> Step 1 </progress>
+            </div>
+    
+    <div class="form-group">
+    {# {{ form.get('37zaG92gw').render }} #}
+    </div>
+
+    <div class="form-group">
+	<label>{{ firstName.label }}</label>
+	<input class="form-control" name="{{ firstName.handle }}" value="{{ firstName.value }}" />
+	{{ firstName.renderErrors() }}
+    </div>
+
+    <div class="form-group">
+	<label>{{ lastName.label }}</label>
+	<input class="form-control" name="{{ lastName.handle }}" value="{{ lastName.value }}" />
+	{{ lastName.renderErrors() }}
+    </div>
+
+     <div class="form-group">
+    <label>{{ cellPhone.label }}</label>
+	<input class="form-control" name="{{ cellPhone.handle }}" value="{{ cellPhone.value }}" />
+	{{ cellPhone.renderErrors() }}
+    </div>
+
+     <div class="form-group">
+    <label>{{ email.label }}</label>
+	<input type="email" class="form-control" name="{{ email.handle }}" />
+	{{ email.renderErrors() }}
+    </div>
+
+    <div class="form-group">
+ 	<label>{{ city.label }}</label>
+	<input class="form-control" name="{{ city.handle }}" value="{{ city.value }}" />
+	{{ city.renderErrors() }}
+    </div>
+
+    <div class="form-group">
+    <label>{{ state.label }}</label>
+	<select class="custom-select" name="{{state.handle}}" id="{{state.handle}}">
+        {% for option in state.options %}        
+            <option value="{{option.value}}">{{option.label}}</option>
+        {% endfor %}
+    </select>
+	{{ city.renderErrors() }}
+    </div>
+
+    <div class="form-group text-center">
+        {# {{ form.get('nd8rlG5Gv').render({
+              class: "btn btn-lg btn-success",
+        }) }} #}
+    </div>
+    
+    </div>
+    </div>
+    </div>
+    </div>
+{% endif %}        
+</div>
+
+{{ form.renderClosingTag }}
+
