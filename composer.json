@@ -4,6 +4,7 @@
     "craftcms/feed-me": "4.2.1.1",
     "craftcms/redactor": "2.6.1",
     "doublesecretagency/craft-smartmap": "3.2.2.1",
+    "hashtagerrors/craft-pagination": "1.0.2",
     "vlucas/phpdotenv": "^3.4.0"
   },
   "autoload": {

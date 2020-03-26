@@ -1,0 +1,82 @@
+#listings {
+    background-color: #EEEEEE;
+
+    h1 {
+        font-size: 1.5em !important;
+        font-style: italic;
+    }
+
+    .jobBrief {
+        background-color: #fff;
+        margin: 10px 0px;
+        padding: .5em 1em;
+
+        .briefTitle {
+            font-size: 1em !important;
+            color: #999999;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: .8em;
+            margin-bottom: 2px;
+        }
+
+        a {
+            background-color: #33D133;
+            color: #fff;
+        }
+
+        // Bottom half of listing
+        .bottomBrief {
+            margin-top: 5px;
+            display: inline-block;
+            width: 100%;
+
+            .briefLeft {
+                float: left;
+                width: 50%;
+            }
+
+            .briefRight {
+                float: right;
+                width: 50%;
+
+                ul {
+                    padding-left: 0px;
+                    margin-bottom: 0px;
+
+                    li {
+                        display: inline-block;
+                        padding-right: 5px;
+                        padding-left: 10px;
+
+                        .noBG {
+                            background-color: #fff !important;
+
+                            svg {
+                                font-size: 1.8em;
+                                color: #83D3CB;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .pagination{
+        display: block;
+        padding: 2em 0px;;
+        width: auto;
+        margin: 0 auto;
+        li{
+            display: inline-block;
+            a{
+                color: #33D133;
+                background-color: #fff;
+            }
+        }
+    }
+}

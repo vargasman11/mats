@@ -747,7 +747,7 @@
       padding: 0 10px;
       color: #989898; }
       #social ul li svg {
-        font-size: 3em;
+        font-size: 2em;
         color: #989898;
         padding-right: 2px; }
 
@@ -765,6 +765,111 @@
       padding: 0 10px;
       color: #989898; }
       #social ul li svg {
-        font-size: 3em;
         color: #989898;
         padding-right: 2px; } }
+
+#listings {
+  background-color: #EEEEEE; }
+  #listings h1 {
+    font-size: 1.5em !important;
+    font-style: italic; }
+  #listings .jobBrief {
+    background-color: #fff;
+    margin: 10px 0px;
+    padding: .5em 1em; }
+    #listings .jobBrief .briefTitle {
+      font-size: 1em !important;
+      color: #999999;
+      font-style: normal;
+      font-weight: 400; }
+    #listings .jobBrief p {
+      font-size: .8em;
+      margin-bottom: 2px; }
+    #listings .jobBrief a {
+      background-color: #33D133;
+      color: #fff; }
+    #listings .jobBrief .bottomBrief {
+      margin-top: 5px;
+      display: inline-block;
+      width: 100%; }
+      #listings .jobBrief .bottomBrief .briefLeft {
+        float: left;
+        width: 50%; }
+      #listings .jobBrief .bottomBrief .briefRight {
+        float: right;
+        width: 50%; }
+        #listings .jobBrief .bottomBrief .briefRight ul {
+          padding-left: 0px;
+          margin-bottom: 0px; }
+          #listings .jobBrief .bottomBrief .briefRight ul li {
+            display: inline-block;
+            padding-right: 5px;
+            padding-left: 10px; }
+            #listings .jobBrief .bottomBrief .briefRight ul li .noBG {
+              background-color: #fff !important; }
+              #listings .jobBrief .bottomBrief .briefRight ul li .noBG svg {
+                font-size: 1.8em;
+                color: #83D3CB; }
+  #listings .pagination {
+    display: block;
+    padding: 2em 0px;
+    width: auto;
+    margin: 0 auto; }
+    #listings .pagination li {
+      display: inline-block; }
+      #listings .pagination li a {
+        color: #33D133;
+        background-color: #fff; }
+
+#searchResults {
+  background-color: #EEEEEE; }
+  #searchResults h1 {
+    font-size: 1.5em !important;
+    font-style: italic; }
+  #searchResults .jobResultBrief {
+    background-color: #fff;
+    margin: 10px 0px;
+    padding: .5em 1em; }
+    #searchResults .jobResultBrief .briefResultTitle {
+      font-size: 1em !important;
+      color: #999999;
+      font-style: normal;
+      font-weight: 400; }
+    #searchResults .jobResultBrief p {
+      font-size: .8em;
+      margin-bottom: 2px; }
+    #searchResults .jobResultBrief a {
+      background-color: #33D133;
+      color: #fff; }
+    #searchResults .jobResultBrief .bottomResultBrief {
+      margin-top: 5px;
+      display: inline-block;
+      width: 100%; }
+      #searchResults .jobResultBrief .bottomResultBrief .briefResultLeft {
+        float: left;
+        width: 50%; }
+      #searchResults .jobResultBrief .bottomResultBrief .briefResultRight {
+        float: right;
+        width: 50%; }
+        #searchResults .jobResultBrief .bottomResultBrief .briefResultRight ul {
+          padding-left: 0px;
+          margin-bottom: 0px; }
+          #searchResults .jobResultBrief .bottomResultBrief .briefResultRight ul li {
+            display: inline-block;
+            padding-right: 5px;
+            padding-left: 10px; }
+            #searchResults .jobResultBrief .bottomResultBrief .briefResultRight ul li .noBG {
+              background-color: #fff !important; }
+              #searchResults .jobResultBrief .bottomResultBrief .briefResultRight ul li .noBG svg {
+                font-size: 1.8em;
+                color: #83D3CB; }
+  #searchResults .pagination {
+    display: block;
+    padding: 2em 0px;
+    width: auto;
+    margin: 0 auto; }
+    #searchResults .pagination li {
+      display: inline-block; }
+      #searchResults .pagination li a {
+        color: #33D133;
+        background-color: #fff; }

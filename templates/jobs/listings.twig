@@ -1,0 +1,67 @@
+{% include './partials/header' %}
+{# NAVIGATION #}
+{% include '/partials/nav' %}
+{% include '/mobile/navM' %}
+{# Search controller here #}
+{% include 'jobs/controller/search' %}
+
+
+<div class="container-fluid" id="listings">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 offset-md-3">
+            <h1>Avalable Opportunities</h1>
+
+             {# paginate entries #}
+             {% set query = craft.entries().section('jobListings').limit(10) %}
+            {% paginate query as pageInfo, pageEntries %}
+            {# {{ craft.pagination.render(pageInfo) }} #}
+
+            {% set entries = craft.entries.section('jobListings').limit(5) %}
+            {% for entry in entries %}
+            <div class="jobBrief">
+                <h1 class="briefTitle">{{entry.title}}</h1>
+                <p><strong>Boyd Bros:</strong> {{entry.city}}</p>
+                <p><strong>Truck Type:</strong> {{entry.truckType}}</p>
+                <p><strong>Job Type:</strong> {{entry.truckType}}</p>
+                <a class="btn" href="/jobs/{{entry.slug}}"><i class="fas fa-arrow-right"></i> Get more details</a>
+                <div class="bottomBrief">
+                    <div class="briefLeft">
+                        <p>Posted: {{entry.postDate | date("M d, Y") }} </p>
+                        <p>Job ID: {{entry.id}}</p>
+                    </div>
+                    <div class="briefRight">
+                        <ul class="socialListing">
+                            <li><a class="noBG" href="#"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a class="noBG" href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a class="noBG" href="#"><i class="fas fa-sms"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}    
+    <div class="container">
+         {{ craft.pagination.render(pageInfo, 'ellipsis', {
+            ulClass: 'pagination text-center',
+            liClass: 'page-item',
+            aClass: 'page-link',
+            activeClass: 'active',
+            includeFirstLast: true,
+            includePrevNext: true,
+            prevText: '<i class="fa fa-angle-double-left" aria-hidden="true"></i> Prev',
+            nextText: 'Next <i class="fa fa-angle-double-right" aria-hidden="true"></i>',
+            pageRange: 1
+        }) }}
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+{# Green #}
+{% include 'partials/green' %}
+{# bottom #}
+{% include 'partials/bottom' %}
+{% include 'mobile/bottomM' %}
+{# Footer #}
+{% include 'partials/footer' %}

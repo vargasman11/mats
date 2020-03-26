@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c548ca28bbe231bbb9f84639b888b79",
+    "content-hash": "6af1a1a4349fdade70e7c4f5300ec29a",
     "packages": [
         {
             "name": "cakephp/core",
@@ -1201,6 +1201,59 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "hashtagerrors/craft-pagination",
+            "version": "1.0.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hashtagerrors/pagination/zipball/2660da872ef9a96e99a4306a6761438d50123285",
+                "reference": "2660da872ef9a96e99a4306a6761438d50123285",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Pagination",
+                "handle": "pagination",
+                "hasCpSettings": true,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/hashtagerrors/craft-pagination/master/CHANGELOG.md",
+                "components": {
+                    "paginationService": "hashtagerrors\\pagination\\services\\PaginationService"
+                },
+                "class": "hashtagerrors\\pagination\\Pagination"
+            },
+            "autoload": {
+                "psr-4": {
+                    "hashtagerrors\\pagination\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hashtag Errors",
+                    "homepage": "http://hashtagerrors.com"
+                }
+            ],
+            "description": "Pagination plugin for Craft 3",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-pagination",
+                "craft-plugin",
+                "craftcms",
+                "pagination"
+            ],
+            "support": {
+                "docs": "https://github.com/hashtagerrors/craft-pagination/blob/master/README.md",
+                "issues": "https://github.com/hashtagerrors/craft-pagination/issues"
+            },
+            "time": "2019-08-11T14:21:50+00:00"
         },
         {
             "name": "intervention/httpauth",
