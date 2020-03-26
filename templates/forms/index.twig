@@ -46,10 +46,31 @@
 
             {# PROGRESS BAR #}
             <div class="form-group text-center">
-            <label for="file">Application Progress</label> <br>
-            <progress class="progess-bar" id="file" max="100" value="25"> Step 1 </progress>
+                <ul class="progress-indicator">
+                    <li class="active">
+                        <span class="bubble"></span>
+                        <span class="li-text">Step 1. <br><small>(complete)</small></span>
+                    </li>
+                    <li class="">
+                        <span class="bubble"></span>
+                        <span class="li-text">Step 2.</span>
+                    </li>
+                    <li class="">
+                        <span class="bubble"></span>
+                        <span class="li-text">Step 3.</span>
+                    </li>
+                    <li>
+                        <span class="bubble"></span>
+                        <span class="li-text">Step 4.</span>
+                    </li>           
+                </ul>   
             </div>
+        </div>
+    </div>
     
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-8 col-sm-6">
     <div class="form-group">
     {{ form.get('37zaG92gw').render }}
     </div>
@@ -96,18 +117,18 @@
 
     <div class="form-group text-center">
         {{ form.get('rMmkJ3VAV').render({
-              class: "btn btn-lg btn-success",
+              class: "btn btn-lg btn-green",
         }) }}
     </div>
-
-    {# LOGO #}
-    <img class="formLogo" src="/assets/logos/white-logo.png" alt="">
     
+        {# LOGO #}
+    <img class="formLogo img-fluid" src="/assets/logos/white-logo.png" alt="">
     </div>
     </div>
-    </div>
-    </div>
+    
+   
 {% endif %}        
+</div>
 </div>
 
 {# PAGE 2 #}
@@ -119,10 +140,32 @@
 
             {# PROGRESS BAR #}
             <div class="form-group text-center">
-            <label for="file">Application Progress</label> <br>
-            <progress class="progess-bar" id="file" max="100" value="50"> Step 2 </progress>
+                 <ul class="progress-indicator">
+                    <li class="completed">
+                        <span class="bubble"></span>
+                        <span class="li-text">Step 1. <br><small>(complete)</small></span>
+                    </li>
+                    <li class="active">
+                        <span class="bubble"></span>
+                        <span class="li-text">Step 2.</span>
+                    </li>
+                    <li class="">
+                        <span class="bubble"></span>
+                        <span class="li-text">Step 3.</span>
+                    </li>
+                    <li>
+                        <span class="bubble"></span>
+                        <span class="li-text">Step 4.</span>
+                    </li>           
+                </ul>
             </div>
-    
+        </div>
+        </div>
+        </div>
+        
+     <div class="container">
+        <div class="row">
+        <div class="col-sm-8 col-sm-6">
 
     <div class="form-group">
     {{ form.get('QrnEGrVMn').render }}
@@ -151,17 +194,19 @@
 
 	 <div class="form-group text-center">
         {{ form.get('jRpqWm1zb').render({
-              class: "btn btn-lg btn-success mx-2",
+              class: "btn btn-lg bt-green mx-2",
         }) }}
     </div>
 
     {# LOGO #}
-    <img class="formLogo" src="/assets/logos/white-logo.png" alt="">
+    <img class="formLogo mt-5 p-5 img-fluid" src="/assets/logos/white-logo.png" alt="">
 
     </div>
     </div>
+
+
     </div>
-    </div>
+    </div>    
 {% endif %}
 
 
@@ -174,9 +219,32 @@
 
             {# PROGRESS BAR #}
             <div class="form-group text-center">
-            <label for="file">Application Progress</label> <br>
-            <progress class="progess-bar" id="file" max="100" value="75"> Step 3 </progress>
+                 <ul class="progress-indicator">
+                    <li class="completed">
+                        <span class="bubble"></span>
+                        <span class="li-text">Step 1. <br><small>(complete)</small></span>
+                    </li>
+                    <li class="completed">
+                        <span class="bubble"></span>
+                        <span class="li-text">Step 2.</span>
+                    </li>
+                    <li class="active">
+                        <span class="bubble"></span>
+                        <span class="li-text">Step 3.</span>
+                    </li>
+                    <li>
+                        <span class="bubble"></span>
+                        <span class="li-text">Step 4.</span>
+                    </li>           
+                </ul>
             </div>
+          </div>
+        </div>
+        </div>
+
+       <div class="container">
+        <div class="row">
+        <div class="col-sm-8 col-sm-6">
     
     <div class="form-group">
     {{ form.get('Rq5E3qvzV').render }}
@@ -203,11 +271,11 @@
 
     <div class="form-group text-center">
         {{ form.get('vG8AKJMRD').render({
-              class: "btn btn-lg btn-success mx-2",
+              class: "btn btn-lg btn-green mx-2",
         }) }}
     </div>
     {# LOGO #}
-    <img class="formLogo" src="/assets/logos/white-logo.png" alt="">
+    <img class="formLogo mt-5 p-5 img-fluid" src="/assets/logos/white-logo.png" alt="">
 
     </div>
     </div>
@@ -225,9 +293,31 @@
 
                {# PROGRESS BAR #}
             <div class="form-group text-center">
-            <label for="file">Application Progress</label> <br>
-            <progress class="progess-bar" id="file" max="100" value="90"> Step 4 </progress>
+                 <ul class="progress-indicator">
+                    <li class="completed">
+                        <span class="bubble"></span>
+                        <span class="li-text">Step 1. <br></span>
+                    </li>
+                    <li class="completed">
+                        <span class="bubble"></span>
+                        <span class="li-text">Step 2.</span>
+                    </li>
+                    <li class="completed">
+                        <span class="bubble"></span>
+                        <span class="li-text">Step 3.</span>
+                    </li>
+                    <li class="active">
+                        <span class="bubble"></span>
+                        <span class="li-text">Step 4.</span>
+                    </li>           
+                </ul>
             </div>
+        </div>
+        </div>
+        </div>
+     <div class="container">
+        <div class="row">
+        <div class="col-sm-8 col-sm-6">
 
     <div class="form-group">
     {{ form.get('QrnEGmNE8').render }}
@@ -241,10 +331,10 @@
 
       <div class="form-group text-center">
         {{ form.get('8RGzYqDm6').render({
-              class: "btn btn-lg btn-success mx-2",
+              class: "btn btn-lg btn-green mx-2",
         }) }}
     </div>
-    <img class="formLogo" src="/assets/logos/white-logo.png" alt="">
+    <img class="formLogo mt-5 p-5 img-fluid" src="/assets/logos/white-logo.png" alt="">
 </div>
 </div>
 </div>
@@ -253,7 +343,7 @@
 
             </div>
         </div>
-    </div>
+</div>
 </div>
 
 {{ form.renderClosingTag }}

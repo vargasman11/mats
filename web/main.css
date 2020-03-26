@@ -934,6 +934,9 @@
 .form-style label {
   color: #fff; }
 
+.progress-indicator .li-text {
+  color: #fff !important; }
+
 #thankYouGreen .liteGreenBG {
   background-color: #2EB53C;
   color: #fff; }
@@ -958,7 +961,7 @@
       text-align: center; }
       #thankYouGreen .gradientBG .socialThankYou ul li {
         display: inline;
-        padding: 0px 15px; }
+        padding-right: 10px; }
         #thankYouGreen .gradientBG .socialThankYou ul li svg {
           color: #83D3CB !important;
           font-size: 2.4em; }
