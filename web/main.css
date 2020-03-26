@@ -375,7 +375,8 @@
 #navM {
   display: none; }
   #navM #navM__top-row {
-    width: 100%; }
+    width: 100%;
+    position: relative; }
     #navM #navM__top-row #navLogo {
       height: 40px;
       margin-top: -10px; }
@@ -383,6 +384,14 @@
       border: none; }
     #navM #navM__top-row button:focus {
       outline: none; }
+    #navM #navM__top-row #searchAlt svg {
+      color: #33D133;
+      font-size: 1.5em; }
+    #navM #navM__top-row form {
+      position: absolute;
+      top: 0;
+      right: -300%;
+      display: none; }
 
 .mobileContainerDrop {
   position: absolute;

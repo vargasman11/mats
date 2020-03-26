@@ -2,6 +2,7 @@
     display: none;
     #navM__top-row {
         width: 100%;
+        position: relative;
 
         #navLogo {
             height: 40px;    
@@ -12,6 +13,19 @@
         }
         button:focus{
             outline: none;
+        }
+
+        #searchAlt{
+            svg{
+                color: #33D133;
+                font-size: 1.5em;
+            }
+        }
+        form{
+            position: absolute;
+            top: 0;
+            right: -300%;
+            display: none;
         }
     }
 }
