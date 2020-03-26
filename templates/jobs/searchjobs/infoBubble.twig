@@ -1,0 +1,20 @@
+{% set segments = craft.app.request.segments %}
+
+{% set directionsUrl = element.jobAddress.directionsUrl(element.jobAddress, element.title) %}
+
+
+<div class="div text-center">
+<h5 style="width:60%;" class="mx-auto">{{ element.title }}</h5>
+  <a class="btn btn-small btn-success" href="/jobs/{{element.slug}}">See Job Details</a>
+</div>
+
+<div class="text-center p-2">
+  {# "More Info" and "Get Directions" links #}
+  <strong><a class="text-info" href="{{ directionsUrl }}" target="_blank">Get Directions</a></strong>
+</div>
+
+<div class="text-center">
+  {# Special "zoomOnMarker" JavaScript function #}
+  <h6 class="text-success" onclick="smartMap.zoomOnMarker('{{ marker.mapId }}', '{{ marker.markerName }}', 15)">Zoom in!
+  </h6>
+</div>
