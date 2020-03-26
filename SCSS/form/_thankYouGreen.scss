@@ -1,13 +1,44 @@
-#thankYouGreen{
-    .liteGreenBG{
+#thankYouGreen {
+    .liteGreenBG {
         background-color: #2EB53C;
         color: #fff;
     }
-    .darkGreen-bg{
+
+    .darkGreen-bg {
         background-color: #0E8E20;
-        img{
-            height: 300px;
+
+        img {
+            height: 250px;
+        }
+    }
+
+    .gradientBG {
+        // background: rgb(51, 209, 51);
+        // background: linear-gradient(180deg, rgba(51, 209, 51, 1) 0%, rgba(26, 58, 105, 1) 85%);
+        background: rgb(51, 209, 51);
+        background: linear-gradient(180deg, rgba(51, 209, 51, 0.9654236694677871) 0%, rgba(26, 58, 105, 1) 66%);
+
+        h1,
+        p {
+            color: #fff;
+            text-align: center;
+        }
+
+        .socialThankYou {
+            margin-top: 3em;
+            ul{
+                padding-left: 0px;
+                list-style: none;
+                text-align: center;
+                li{
+                    display: inline;
+                    padding:0px 15px;
+                    svg{
+                        color:#83D3CB !important;
+                        font-size:2.4em;
+                    }
+                }
+            }
         }
     }
 }
-

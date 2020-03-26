@@ -941,4 +941,24 @@
 #thankYouGreen .darkGreen-bg {
   background-color: #0E8E20; }
   #thankYouGreen .darkGreen-bg img {
-    height: 300px; }
+    height: 250px; }
+
+#thankYouGreen .gradientBG {
+  background: #33d133;
+  background: linear-gradient(180deg, rgba(51, 209, 51, 0.965424) 0%, #1a3a69 66%); }
+  #thankYouGreen .gradientBG h1,
+  #thankYouGreen .gradientBG p {
+    color: #fff;
+    text-align: center; }
+  #thankYouGreen .gradientBG .socialThankYou {
+    margin-top: 3em; }
+    #thankYouGreen .gradientBG .socialThankYou ul {
+      padding-left: 0px;
+      list-style: none;
+      text-align: center; }
+      #thankYouGreen .gradientBG .socialThankYou ul li {
+        display: inline;
+        padding: 0px 15px; }
+        #thankYouGreen .gradientBG .socialThankYou ul li svg {
+          color: #83D3CB !important;
+          font-size: 2.4em; }
