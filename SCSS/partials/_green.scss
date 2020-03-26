@@ -30,6 +30,13 @@
             text-transform: uppercase;
             font-weight: bold;
             width: 80%;
+            #applyLottie{
+                svg{
+                height: 80px !important;
+                width: 80px !important;
+                margin-left: -30px;
+                }
+            }
         }
     }
 }
