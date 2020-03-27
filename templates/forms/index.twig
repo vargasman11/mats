@@ -1,5 +1,9 @@
 {% include 'partials/header' %}
 
+{# NAVIGATION #}
+{% include 'partials/nav' %}
+{% include 'mobile/navM' %}
+
 
 {% set form = craft.freeform.form("form") %}
 
@@ -347,6 +351,10 @@
 </div>
 
 {{ form.renderClosingTag }}
+
+{# bottom #}
+{% include 'partials/bottom' %}
+{% include 'mobile/bottomM' %}
 
 
 {% include 'partials/footer' %}
