@@ -778,7 +778,7 @@
     padding: 1.8em 0; }
     #social ul li {
       display: inline-block;
-      font-size: .5em;
+      font-size: 1em;
       padding: 0 10px;
       color: #989898; }
       #social ul li svg {
@@ -993,3 +993,7 @@ input {
         #thankYouGreen .gradientBG .socialThankYou ul li svg {
           color: #83D3CB !important;
           font-size: 2.4em; }
+
+#survey .greenSurvey {
+  background-color: #1BFF4F;
+  color: #fff; }
