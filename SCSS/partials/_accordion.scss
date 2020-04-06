@@ -2,8 +2,16 @@
     .card {
         background-color: #197AFC;
 
-        button {
-            color: #fff;
+        .card-header {
+            button {
+                color: #fff;
+                margin-left: 10%;
+            }
+
+            svg {
+                color: #fff !important;
+                float: right;
+            }
         }
     }
 

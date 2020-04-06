@@ -1,5 +1,6 @@
+
 #shortform {
-    display: flex;    
+    display: flex;  
 }
 
 select, 
@@ -102,4 +103,13 @@ input{
 .btn-green{
     background-color: #33D133;
     color: #fff;
+}
+
+
+
+
+@media(max-width:768px){
+    .utility-site-content{
+        margin-top: 70px;  
+    }
 }

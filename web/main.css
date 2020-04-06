@@ -286,8 +286,12 @@
 
 #accordion .card {
   background-color: #197AFC; }
-  #accordion .card button {
-    color: #fff; }
+  #accordion .card .card-header button {
+    color: #fff;
+    margin-left: 10%; }
+  #accordion .card .card-header svg {
+    color: #fff !important;
+    float: right; }
 
 #accordion .collapse p {
   color: #2E3B5F;
@@ -564,7 +568,13 @@
   #accordionM .card-header-mobile {
     background-color: #197AFC; }
     #accordionM .card-header-mobile button {
-      color: #fff; }
+      color: #fff;
+      margin-left: 20%; }
+    #accordionM .card-header-mobile svg {
+      float: right;
+      color: #fff;
+      margin-right: 10%;
+      margin-top: 10px; }
   #accordionM .bg-white p {
     color: #2E3B5F;
     font-weight: bold; }
@@ -971,6 +981,10 @@ input {
 .btn-green {
   background-color: #33D133;
   color: #fff; }
+
+@media (max-width: 768px) {
+  .utility-site-content {
+    margin-top: 70px; } }
 
 #thankYouGreen .liteGreenBG {
   background-color: #2EB53C;
