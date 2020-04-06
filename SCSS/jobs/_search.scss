@@ -12,16 +12,26 @@
         }
         input{
             width: 100%;
-            background-color: #EAEAEA;
+            background-color: #EAEAEA !important;
             border-radius: 5px;
             padding: 2px;
         }
+        select{
+            background-color: #EAEAEA !important;
+        }
         button{
             background-color: #8D8D8D;
-            border-width: 0;
+            border-width: 1px;
+            border-color:#33D133;
             border-radius: 5px;
             color: #fff;
             padding: 10px 35px;
         }
+    }
+}
+
+@media(max-width:768px){
+    #searchController{
+        margin-top: 70px;
     }
 }

@@ -3,21 +3,20 @@
     background: linear-gradient(180deg, rgba(247, 247, 247, 1) 0%, rgba(199, 199, 199, 1) 50%);
     #white-space{
         // background-color: #fff;
-        height: 30px;
+        height: 10px;
     }
     ul{
         list-style: none;
         text-align: center;
         margin-bottom: 0em;
-        padding:1.8em 0;
+        padding:1.4em 0;
         li{
             display: inline-block;
-            font-size: 1em;
+            font-size: 2.5em;
             padding: 0 10px;
             color: #989898;
 
             svg{
-                font-size: 2em;
                 color: #989898;
                 padding-right: 2px;
             }
@@ -29,16 +28,16 @@
     #social {
         #white-space{
             // background-color: #fff;
-            height: 50px;
+            height: 20px;
         }
         ul{
             list-style: none;
             text-align: center;
             margin-bottom: 0em;
-            padding:1.8em 0;
+            padding:1.2em 0;
             li{
                 display: inline-block;
-                font-size: 1em;
+                font-size: 2em;
                 padding: 0 10px;
                 color: #989898;
     
