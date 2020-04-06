@@ -39,9 +39,11 @@
     }
 
     .contactJumbo{
-        position: absolute;
+        // position: absolute;
+        position: fixed;
+        z-index: 1000;
         bottom: 5%;
-        right: 10%;
+        right: 5%;
         width: 90px;
         background-color: #33D133;
         border-radius: 50%;

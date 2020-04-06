@@ -61,9 +61,10 @@
       font-size: 2em;
       border-radius: 10px; }
   #jumbo .contactJumbo {
-    position: absolute;
+    position: fixed;
+    z-index: 1000;
     bottom: 5%;
-    right: 10%;
+    right: 5%;
     width: 90px;
     background-color: #33D133;
     border-radius: 50%;
@@ -373,7 +374,12 @@
     display: none; } }
 
 #navM {
-  display: none; }
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  height: 70px;
+  width: 100%; }
   #navM #navM__top-row {
     width: 100%;
     position: relative; }
@@ -401,7 +407,9 @@
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  padding: 20px 40px; }
+  padding: 20px 40px;
+  position: fixed;
+  width: 100%; }
   #mobileDropdown ul {
     width: 80%;
     text-align: center; }
@@ -420,7 +428,8 @@
   background-size: cover;
   background-position: center;
   min-height: 450px;
-  padding-top: 20px; }
+  padding-top: 20px;
+  margin-top: 70px; }
   #jumboM a {
     background-color: #33D133 !important;
     color: #fff; }
@@ -437,8 +446,9 @@
   #contactM img {
     height: 100px; }
   #contactM .contactJumboM {
-    position: absolute;
-    bottom: 5%;
+    position: fixed;
+    z-index: 1000;
+    bottom: 12%;
     right: 10%;
     width: 90px;
     background-color: #33D133;
@@ -455,7 +465,8 @@
 
 #blueM {
   padding: 0px;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
   #blueM h1 {
     background-color: #0E7FFF;
     color: #fff;
@@ -997,3 +1008,10 @@ input {
 #survey .greenSurvey {
   background-color: #1BFF4F;
   color: #fff; }
+
+* {
+  font-family: 'Roboto', sans-serif !important; }
+
+body {
+  overflow-x: hidden;
+  position: relative; }

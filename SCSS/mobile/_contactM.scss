@@ -4,8 +4,10 @@
         height: 100px;
     }
     .contactJumboM{
-        position: absolute;
-        bottom: 5%;
+        // position: absolute;
+        position: fixed;
+        z-index: 1000;
+        bottom: 12%;
         right: 10%;
         width: 90px;
         background-color: #33D133;
