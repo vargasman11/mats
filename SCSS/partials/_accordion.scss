@@ -5,14 +5,23 @@
         .card-header {
             button {
                 color: #fff;
-                margin-left: 10%;
+                margin-left: 30%;
             }
 
             svg {
                 color: #fff !important;
                 float: right;
+                font-size: 1.2em;
+                margin-right: 5%;
+                margin-top: 5px;
             }
         }
+        #headingOne{ background-color: #1C97FF;}
+        #headingTwo{ background-color: #197AFC;}
+        #headingThree{ background-color: #1B6DFE;}
+        #headingFour{ background-color: #2157FC;}
+        #headingFive{ background-color: #2831FE;}
+        #headingSix{ background-color: #2A26FE;}
     }
 
     .collapse {

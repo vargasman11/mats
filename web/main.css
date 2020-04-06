@@ -288,10 +288,25 @@
   background-color: #197AFC; }
   #accordion .card .card-header button {
     color: #fff;
-    margin-left: 10%; }
+    margin-left: 30%; }
   #accordion .card .card-header svg {
     color: #fff !important;
-    float: right; }
+    float: right;
+    font-size: 1.2em;
+    margin-right: 5%;
+    margin-top: 5px; }
+  #accordion .card #headingOne {
+    background-color: #1C97FF; }
+  #accordion .card #headingTwo {
+    background-color: #197AFC; }
+  #accordion .card #headingThree {
+    background-color: #1B6DFE; }
+  #accordion .card #headingFour {
+    background-color: #2157FC; }
+  #accordion .card #headingFive {
+    background-color: #2831FE; }
+  #accordion .card #headingSix {
+    background-color: #2A26FE; }
 
 #accordion .collapse p {
   color: #2E3B5F;
@@ -575,6 +590,18 @@
       color: #fff;
       margin-right: 10%;
       margin-top: 10px; }
+  #accordionM #headingMOne {
+    background-color: #1C97FF; }
+  #accordionM #headingMTwo {
+    background-color: #197AFC; }
+  #accordionM #headingMThree {
+    background-color: #1B6DFE; }
+  #accordionM #headingMFour {
+    background-color: #2157FC; }
+  #accordionM #headingMFive {
+    background-color: #2831FE; }
+  #accordionM #headingMSix {
+    background-color: #2A26FE; }
   #accordionM .bg-white p {
     color: #2E3B5F;
     font-weight: bold; }
