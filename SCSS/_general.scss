@@ -9,3 +9,9 @@ body{
     overflow-x: hidden;
     position: relative;
 }
+
+
+// Toggle classes for chevrons
+.rotate-chevron{
+    transform: rotate(180deg);
+}

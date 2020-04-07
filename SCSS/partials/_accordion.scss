@@ -9,7 +9,7 @@
             }
 
             svg {
-                color: #fff !important;
+                color: #fff;
                 float: right;
                 font-size: 1.2em;
                 margin-right: 5%;
@@ -25,6 +25,8 @@
     }
 
     .collapse {
+        z-index: 100;
+        background-color: #fff;
         p {
             color: #2E3B5F;
             font-weight: bold;

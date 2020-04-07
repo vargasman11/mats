@@ -290,7 +290,7 @@
     color: #fff;
     margin-left: 30%; }
   #accordion .card .card-header svg {
-    color: #fff !important;
+    color: #fff;
     float: right;
     font-size: 1.2em;
     margin-right: 5%;
@@ -308,25 +308,26 @@
   #accordion .card #headingSix {
     background-color: #2A26FE; }
 
-#accordion .collapse p {
-  color: #2E3B5F;
-  font-weight: bold; }
-
-#accordion .collapse ul li {
-  color: #197AFC;
-  font-weight: bold; }
-  #accordion .collapse ul li .green {
-    color: #33D133; }
-  #accordion .collapse ul li .gray {
-    color: #707070;
-    font-weight: normal; }
-
-#accordion .collapse a {
-  background-color: #33D133;
-  color: #fff;
-  padding: 10px 25px;
-  font-size: 1.2em;
-  border-radius: 10px; }
+#accordion .collapse {
+  z-index: 100;
+  background-color: #fff; }
+  #accordion .collapse p {
+    color: #2E3B5F;
+    font-weight: bold; }
+  #accordion .collapse ul li {
+    color: #197AFC;
+    font-weight: bold; }
+    #accordion .collapse ul li .green {
+      color: #33D133; }
+    #accordion .collapse ul li .gray {
+      color: #707070;
+      font-weight: normal; }
+  #accordion .collapse a {
+    background-color: #33D133;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 1.2em;
+    border-radius: 10px; }
 
 @media (max-width: 768px) {
   #accordion {
@@ -581,7 +582,8 @@
 #accordionM {
   display: block; }
   #accordionM .card-header-mobile {
-    background-color: #197AFC; }
+    background-color: #197AFC;
+    transition: all 3s; }
     #accordionM .card-header-mobile button {
       color: #fff;
       margin-left: 20%; }
@@ -1057,3 +1059,6 @@ input {
 body {
   overflow-x: hidden;
   position: relative; }
+
+.rotate-chevron {
+  transform: rotate(180deg); }
