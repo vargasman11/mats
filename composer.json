@@ -1,11 +1,11 @@
 {
   "require": {
-    "craftcms/cms": "3.4.11",
+    "craftcms/cms": "3.4.14",
     "craftcms/feed-me": "4.2.2",
     "craftcms/redactor": "2.6.1",
     "doublesecretagency/craft-smartmap": "3.2.2.1",
     "hashtagerrors/craft-pagination": "1.0.2",
-    "solspace/craft-freeform": "3.6.5",
+    "solspace/craft-freeform": "3.6.6",
     "vlucas/phpdotenv": "^3.4.0"
   },
   "autoload": {
