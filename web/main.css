@@ -94,53 +94,26 @@
       border-top: 1px solid #fff;
       margin-top: 2em;
       width: 70%; }
-    #blue .blue-bottom .js-flickity {
-      overflow: hidden;
-      position: relative;
-      /* cell number */
-      /* smaller, dark, rounded square */
-      /* icon color */
-      /* position outside */ }
-      #blue .blue-bottom .js-flickity .gallery-cell {
+    #blue .blue-bottom .glide .glide__slide {
+      min-height: 120px;
+      background-color: #002391;
+      padding: 5px;
+      border-radius: 10px; }
+      #blue .blue-bottom .glide .glide__slide .gallery-cell {
         position: relative;
-        width: 28%;
-        height: 150px;
-        margin-right: 10px;
-        background: #8C8;
         border-radius: 5px;
-        counter-increment: carousel-cell; }
-      #blue .blue-bottom .js-flickity .gallery-cell.is-selected {
-        background: #03427c; }
-      #blue .blue-bottom .js-flickity .gallery-cell:before {
-        display: block;
-        text-align: center;
-        line-height: 200px;
-        font-size: 80px;
-        color: white; }
-      #blue .blue-bottom .js-flickity .gallery-cell {
-        background-color: #002391;
-        width: 25%;
-        text-align: center;
-        margin: 0 5px;
-        border-radius: 5px; }
-      #blue .blue-bottom .js-flickity .flickity-button {
-        background: #333; }
-      #blue .blue-bottom .js-flickity .flickity-button:hover {
-        background: #F90; }
-      #blue .blue-bottom .js-flickity .flickity-prev-next-button {
-        width: 30px;
-        height: 30px;
-        border-radius: 5px; }
-      #blue .blue-bottom .js-flickity .flickity-button-icon {
-        fill: white; }
-      #blue .blue-bottom .js-flickity .flickity-prev-next-button.previous {
-        position: absolute;
-        top: 40%;
-        left: 0; }
-      #blue .blue-bottom .js-flickity .flickity-prev-next-button.next {
-        position: absolute;
-        top: 40%;
-        right: 0%; }
+        text-align: center; }
+        #blue .blue-bottom .glide .glide__slide .gallery-cell svg {
+          width: 100%;
+          margin: 0 auto; }
+    #blue .blue-bottom .glide .glide__arrows .glide__arrow {
+      background: #003583;
+      border-radius: 50%;
+      border: none; }
+    #blue .blue-bottom .glide .glide__arrows .glide__arrow--left {
+      margin-left: -80px; }
+    #blue .blue-bottom .glide .glide__arrows .glide__arrow--right {
+      margin-right: -80px; }
   #blue #truck-img {
     position: absolute;
     top: 20%;
@@ -1062,3 +1035,26 @@ body {
 
 .rotate-chevron {
   transform: rotate(180deg); }
+
+div#carousel_wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  height: 100px; }
+  div#carousel_wrapper ul {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 300px;
+    height: 50px;
+    overflow: hidden; }
+    div#carousel_wrapper ul li {
+      list-style: none;
+      float: left; }
+      div#carousel_wrapper ul li div {
+        border: 1px solid white;
+        width: 50px;
+        height: 50px;
+        background-color: gray; }

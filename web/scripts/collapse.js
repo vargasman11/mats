@@ -129,3 +129,5 @@ $(document).on("click", function (event) {
         $("#headingMSix > svg").removeClass("rotate-chevron")
     }
 });
+
+

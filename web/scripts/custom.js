@@ -1,4 +1,4 @@
-// LOTTIE SCRIPTS
+/************** LOTTIE ******************* */
 // apply in the homepage
 var apply = bodymovin.loadAnimation({
   container: document.getElementById('applyLottie'), // Required
@@ -37,7 +37,7 @@ var chatM = bodymovin.loadAnimation({
 })
 
 
-
+/************** ROTATING CHEVRONS ******************** */
 
 // ROTATE CHEVRONS
 $('.btn').click(function () {
@@ -45,3 +45,4 @@ $('.btn').click(function () {
     $('.fas').css("transform", "180deg")
   }
 })
+

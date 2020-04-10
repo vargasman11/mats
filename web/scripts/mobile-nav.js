@@ -3,7 +3,11 @@ $('.search-mobile').click(function(){
 });
 
 
+1
+$(document).ready(function(){
+  $('.demo').slick({ 
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 3});
 
-// $(window).scroll(function(){
-//     $('#navM').css("margin-top","50px");
-// });
+});
