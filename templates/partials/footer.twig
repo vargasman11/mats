@@ -5,14 +5,13 @@ new Glide(".images",{
   perView: 3,
   focusAt: 'center',
   gap: 20,
-  breakpoints: {
-    1200:{
-      perView: 3
-    },
-    800:{
-      perView: 2
-    }
-  }
+}).mount();
+
+new Glide(".imagesM",{
+  type: 'carousel',
+  perView: 3,
+  focusAt: 'center',
+  gap: 40,
 }).mount();
 </script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

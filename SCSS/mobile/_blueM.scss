@@ -1,7 +1,7 @@
 #blueM {
     padding: 0px;
     position: relative;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     // overflow: hidden;
 
     // display: none;
@@ -12,115 +12,116 @@
         margin-bottom: 0px;
     }
 
+    // GLIDE JS
+    .glideM {
+        .glide__slides {
+            margin-bottom: 0px;
+
+            .glide__slide {
+                .gallery-cell {
+                    // background-color: #007FFF;
+                    background-color: #002391;
+                    margin-bottom: 0 20px;
+                    height: 80px;
+
+                    // width: 150px;   
+                    svg {
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+
+                    p {
+                        margin-bottom: 0px;
+                        text-align: center;
+                        // font-size: 12px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        // GLIDE BUTTONS
+        .glide__arrows {
+            .glide__arrow {
+                background-color: #003583;
+                color: #fff;
+                border-radius: 50%;
+                border: none;
+
+                svg {}
+            }
+
+            .glide__arrow--left {
+                margin-left: -80px;
+            }
+
+            .glide__arrow--right {
+                margin-right: -80px;
+            }
+        }
+    }
+
     .blueM-bg {
         background: transparent linear-gradient(180deg, #007FFF 0%, #000D45 100%) 0% 0% no-repeat padding-box;
 
-        .galleryM {
-            overflow: hidden;
-            position: relative;
+        .blue-text-section {
+            color: #fff;
 
-            .gallery-cellM {
-                position: relative;
-                width: 28%;
-                height: 150px;
-                margin-right: 10px;
-                background: #8C8;
-                color: #fff;
-                border-radius: 5px;
-                counter-increment: carousel-cell;
+            .left-text {
+                text-align: right;
+
+                h2 {
+                    font-size: 1.7em !important;
+                    border-right: 1px solid #fff;
+                    padding-right: 20px;
+                }
             }
 
-            .gallery-cellM.is-selected {
-                background: #03427c;
-            }
+            .right-text {
+                text-align: left;
 
-            /* cell number */
-            .gallery-cellM:before {
-                display: block;
-                text-align: center;
-                // content: counter(carousel-cell);
-                line-height: 200px;
-                font-size: 80px;
-                color: white;
+                h2 {
+                    font-size: 1.5em !important;
+                }
             }
-
-            .gallery-cellM {
-                background-color: #002391;
-                width: 25%;
-                text-align: center;
-                margin: 0 5px;
-                border-radius: 5px;
-            }
-
-            /* smaller, dark, rounded square */
-            .flickity-button {
-                background: #333;
-            }
-
-            .flickity-button:hover {
-                background: #F90;
-            }
-
-            .flickity-prev-next-button {
-                width: 30px;
-                height: 30px;
-                border-radius: 5px;
-            }
-
-            /* icon color */
-            .flickity-button-icon {
-                fill: white;
-            }
-
-            /* position outside */
-            .flickity-prev-next-button.previous {
-                // left: -40px;
-                position: absolute;
-                top: 40%;
-                left: 0;
-            }
-
-            .flickity-prev-next-button.next {
-                // right: -40px;
-                position: absolute;
-                top: 40%;
-                right: 0%;
-            }
-
         }
     }
 
-    .blue-text-section {
-        color: #fff;
-
-        .left-text {
-            text-align: right;
-
-            h2 {
-                font-size: 1.7em !important;
-                border-right: 1px solid #fff;
-                padding-right: 20px;
-            }
-        }
-
-        .right-text {
-            text-align: left;
-            h2 {
-                font-size: 1.5em !important;
-            }
-        }  
-    }
-
-    #truck-imgM{
+    #truck-imgM {
         position: absolute;
         transform: translate(7%, -75%);
-
     }
+
 }
 
 // hide on bigger screens
 @media(min-width:880px) {
     #blueM {
         display: none;
+    }
+}
+
+@media(max-width:575px) {
+    #blueM {
+        .glideM {
+
+            // GLIDE BUTTONS
+            .glide__arrows {
+                .glide__arrow {
+                    color: #003583;
+                    background: #fff;
+                    border-radius: 50%;
+                    border: none;
+                }
+
+                .glide__arrow--left {
+                    margin-left: 0px;
+                }
+
+                .glide__arrow--right {
+                    margin-right: 0px;
+                }
+            }
+        }
     }
 }
