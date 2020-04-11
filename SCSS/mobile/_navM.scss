@@ -11,56 +11,96 @@
         position: relative;
 
         #navLogo {
-            height: 40px;    
-            margin-top: -10px;        
+            height: 40px;
+            margin-top: -10px;
         }
-        button{
+
+        button {
             border: none;
         }
-        button:focus{
+
+        button:focus {
             outline: none;
         }
 
-        #searchAlt{
-            svg{
+        #searchAlt {
+            background-color: inherit;
+
+            svg {
                 color: #33D133;
                 font-size: 1.5em;
             }
         }
-        #searchAlt:active{
+
+        #searchAlt:active {}
+    }
+
+    form {
+        position: absolute;
+        top: 0;
+        // width: 0;
+        // transform: translateY(-10px);
+        display: none;
+        width: 60%;
+        input{
+            width: 100%;
+            animation: searchSlide 1s;
         }
-        form{
-            position: absolute;
-            top: 0;
-            right: -300%;
-            display: none;
+    }
+}
+
+// FOORM SHOW
+.form-show {
+    display: block !important;    
+}
+// SHOW SLIDE
+@keyframes searchSlide {
+    // 0% {width: 0px;}
+    // 100% {width: 100%;}
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+        }
+  }
+
+
+.mobileContainerDrop {
+    position: absolute;
+    z-index: 100;
+
+}
+
+#mobileDropdown {
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;;
+    margin-top: 70px;
+    ul {
+        width: 80%;
+        text-align: center;
+
+        li {
+            border-bottom: 1.2px dashed #7a7373 !important;
+            text-transform: uppercase;
+
+            a {
+                color: #3E3E3E;
+            }
         }
     }
 }
 
 
-.mobileContainerDrop{
-    position: absolute;
-    z-index: 100;
-   
-}
-#mobileDropdown{
-    background-color: rgba(255, 255, 255, 0.8);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px); 
-    padding: 20px 40px;
-    position: fixed;
-    width: 100%;
-
-    ul{
-        width: 80%;
-        text-align: center;
-        li{
-            border-bottom: 1.2px dashed #7a7373!important;
-            text-transform: uppercase;
-            a{
-                color: #3E3E3E;
-            }
+@media (min-width: 570px) and (max-width:768px) {
+    #navM {
+        form {            
+            width: 60%;
+            top:5px;
         }
     }
 }
@@ -68,6 +108,6 @@
 // Medium devices (tablets, 768px and up)
 @media (max-width: 768px) {
     #navM {
-        display: block;
+        display: block;      
     }
- }
+}

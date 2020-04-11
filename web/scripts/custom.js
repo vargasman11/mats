@@ -46,3 +46,10 @@ $('.btn').click(function () {
   }
 })
 
+
+
+// MENU SLIDE IN MOBILE
+
+$('#searchAlt').click(function(){
+  $('#slide-form').toggleClass("form-show")
+})

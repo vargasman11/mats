@@ -383,14 +383,28 @@
       border: none; }
     #navM #navM__top-row button:focus {
       outline: none; }
-    #navM #navM__top-row #searchAlt svg {
-      color: #33D133;
-      font-size: 1.5em; }
-    #navM #navM__top-row form {
-      position: absolute;
-      top: 0;
-      right: -300%;
-      display: none; }
+    #navM #navM__top-row #searchAlt {
+      background-color: inherit; }
+      #navM #navM__top-row #searchAlt svg {
+        color: #33D133;
+        font-size: 1.5em; }
+  #navM form {
+    position: absolute;
+    top: 0;
+    display: none;
+    width: 60%; }
+    #navM form input {
+      width: 100%;
+      animation: searchSlide 1s; }
+
+.form-show {
+  display: block !important; }
+
+@keyframes searchSlide {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0%); } }
 
 .mobileContainerDrop {
   position: absolute;
@@ -402,7 +416,8 @@
   backdrop-filter: blur(5px);
   padding: 20px 40px;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  margin-top: 70px; }
   #mobileDropdown ul {
     width: 80%;
     text-align: center; }
@@ -411,6 +426,11 @@
       text-transform: uppercase; }
       #mobileDropdown ul li a {
         color: #3E3E3E; }
+
+@media (min-width: 570px) and (max-width: 768px) {
+  #navM form {
+    width: 60%;
+    top: 5px; } }
 
 @media (max-width: 768px) {
   #navM {
