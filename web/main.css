@@ -368,7 +368,7 @@
 
 #navM {
   display: none;
-  z-index: 1000;
+  z-index: 2000;
   position: fixed;
   top: 0;
   height: 70px;
@@ -1012,6 +1012,9 @@ input {
 
 * {
   font-family: 'Roboto', sans-serif !important; }
+
+html {
+  overflow: scroll; }
 
 body {
   overflow-x: hidden;
