@@ -18,16 +18,36 @@
 {% set state = craft.app.request.getParam('state') %}
 {% set city = craft.app.request.getParam('city') %}
 
-
 {# Here we set the criteria and combine all the parameter variables #}
-{% set criteria ={} %}
+{% set criteria = {} %}
 
-    
+{% if state is defined and state is not empty %}
+{% set criteria = criteria|merge({
+    jobAddress:{
+        filter: {
+            state: state
+        }
+    }
+}) %}
+{% endif %}
+
+{% if city is defined and city is not empty %}
+{% set criteria = criteria|merge({
+    jobAddress:{
+        filter: {
+            city: city
+        }
+    }
+}) %}
+{% endif %}
+
+
+
 {# We build the map location based on criteria #}
 {% set mapQuery = craft.entries(criteria) %}
 {% if mapQuery|length > 0 %}
-    
-    <div class="container-fluid" id="map">
+
+{# <div class="container-fluid" id="map">
         <div class="row bg-secondary">
             <div class="col-sm-12 p-0">
                 {% set locations = mapQuery %}
@@ -43,32 +63,34 @@
 
             </div>
         </div>
-    </div>
+    </div> #}
 
-    {% endif %}
-    
-    {# Set up pagination, and let it grab the current page's results: #}
-    {# Here we limit the cards by ever 6 entries but the map shows all jobs in searcg criteria #}
-    {% set newQuery = craft.entries(criteria).section('jobListings').limit(5)%}
+{% endif %}
 
-    {% paginate newQuery as pageInfo, results %}
-        
-    {# CONDITIONAL IF THERE ARE RESULTS #}
-    {% if results %}
+{# Set up pagination, and let it grab the current page's results: #}
+{# Here we limit the cards by ever 6 entries but the map shows all jobs in searcg criteria #}
+{% set newQuery = craft.entries(criteria).section('jobListings').limit(5)%}
+
+{% paginate newQuery as pageInfo, results %}
+
+{# CONDITIONAL IF THERE ARE RESULTS #}
+{% if results %}
 
 {# DISPLAY Search Results #}
-<div class="container-fluid pt-5 pb-1 jobs-index" id="searchResults">       
+<div class="container-fluid pt-5 pb-1 jobs-index" id="searchResults">
     <h1 class="text-center display-4 pb-5">Your Job Matches</h1>
     <div class="row">
-<div class="col-sm-12 col-md-8 offset-md-2">
-{% for result in results %} 
-{% set singleJobParams =  result.jobAddress %} 
+        <div class="col-sm-12 col-md-8 offset-md-2">
+            {% for result in results %}
+            {% set singleJobParams =  result.jobAddress %}
 
-<div class="jobResultBrief">
+            <div class="jobResultBrief">
                 <h1 class="briefResultTitle">{{result.title}}</h1>
                 <p><strong>Boyd Bros:</strong> {{result.city}}</p>
                 <p><strong>Truck Type:</strong> {{result.truckType}}</p>
                 <p><strong>Job Type:</strong> {{result.truckType}}</p>
+                <p><strong>City:</strong> {{result.jobAddress.city}}</p>
+                <p><strong>State:</strong> {{result.jobAddress.state}}</p>
                 <a class="btn" href="/jobs/{{result.slug}}"><i class="fas fa-arrow-right"></i> Get more details</a>
                 <div class="bottomResultBrief">
                     <div class="briefResultLeft">
@@ -85,15 +107,15 @@
                 </div>
             </div>
 
-    {% endfor %}
-    </div>
+            {% endfor %}
+        </div>
     </div>
 
 
 
     {# PAGINATION #}
     <div class="container">
-         {{ craft.pagination.render(pageInfo, 'ellipsis', {
+        {{ craft.pagination.render(pageInfo, 'ellipsis', {
             ulClass: 'pagination text-center',
             liClass: 'page-item',
             aClass: 'page-link',
@@ -105,17 +127,17 @@
             pageRange: 1
         }) }}
     </div>
-</div>    
+</div>
 
 
-    {% else %}        
-    {# SITE CONTENT CLASS IS A UTILITLY CLASS #}
-    <div class="search-again conatiner-fluid pt-0 pb-5 utility-site-content">
+{% else %}
+{# SITE CONTENT CLASS IS A UTILITLY CLASS #}
+<div class="search-again conatiner-fluid pt-0 pb-5 utility-site-content">
     <div class="container-fluid p-0" id="search-again-image">
     </div>
-        <h3 class="text-center mt-5">Didn't find what you're looking for?</h3>
-        <a class="btn btn-lg btn-success search-again-btn" href="/jobs">Search Again</a>
-    </div>
+    <h3 class="text-center mt-5">Didn't find what you're looking for?</h3>
+    <a class="btn btn-lg btn-success search-again-btn" href="/jobs">Search Again</a>
+</div>
 
 
 
@@ -134,4 +156,3 @@
 {% include 'mobile/bottomM' %}
 
 {% include 'partials/footer' %}
-    
