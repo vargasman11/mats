@@ -23,13 +23,17 @@
             outline: none;
         }
 
-        #searchAlt {
-            background-color: inherit;
+        .search-col {
+            // z-index: 1000;
+            background-color: #343a40 !important;
+            #searchAlt {
+                background-color: inherit;
 
-            svg {
-                color: #33D133;
-                font-size: 1.5em;
-                margin-top: 5px;
+                svg {
+                    color: #33D133;
+                    font-size: 1.5em;
+                    margin-top: 5px;
+                }
             }
         }
 
@@ -43,28 +47,32 @@
         // transform: translateY(-10px);
         display: none;
         width: 60%;
-        input{
+
+        input {
             width: 100%;
             animation: searchSlide 1s;
         }
     }
 }
 
-// FOORM SHOW
+// FORM SHOW
 .form-show {
-    display: block !important;    
+    display: block !important;
 }
+
 // SHOW SLIDE
 @keyframes searchSlide {
+
     // 0% {width: 0px;}
     // 100% {width: 100%;}
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(0%);
-        }
-  }
+    }
+}
 
 
 .mobileContainerDrop {
@@ -79,8 +87,10 @@
     backdrop-filter: blur(5px);
     padding: 20px 40px;
     position: fixed;
-    width: 100%;;
+    width: 100%;
+    ;
     margin-top: 70px;
+
     ul {
         width: 80%;
         text-align: center;
@@ -99,9 +109,9 @@
 
 @media (min-width: 570px) and (max-width:768px) {
     #navM {
-        form {            
+        form {
             width: 60%;
-            top:5px;
+            top: 5px;
         }
     }
 }
@@ -109,6 +119,6 @@
 // Medium devices (tablets, 768px and up)
 @media (max-width: 768px) {
     #navM {
-        display: block;      
+        display: block;
     }
 }

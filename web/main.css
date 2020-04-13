@@ -383,12 +383,14 @@
       border: none; }
     #navM #navM__top-row button:focus {
       outline: none; }
-    #navM #navM__top-row #searchAlt {
-      background-color: inherit; }
-      #navM #navM__top-row #searchAlt svg {
-        color: #33D133;
-        font-size: 1.5em;
-        margin-top: 5px; }
+    #navM #navM__top-row .search-col {
+      background-color: #343a40 !important; }
+      #navM #navM__top-row .search-col #searchAlt {
+        background-color: inherit; }
+        #navM #navM__top-row .search-col #searchAlt svg {
+          color: #33D133;
+          font-size: 1.5em;
+          margin-top: 5px; }
   #navM form {
     position: absolute;
     top: 0;
