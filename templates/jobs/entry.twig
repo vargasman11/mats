@@ -1,4 +1,4 @@
-{% include './partials/header' %}
+{% include '/partials/header' %}
 
 {# NAVIGATION #}
 {% include '/partials/nav' %}
@@ -10,44 +10,13 @@
 {% block main %}
 
 
-<div class="container-fluid" id="jobEntry">
+<div class="container-fluid p-5 bg-light" id="jobEntry">
 {# job details #}
     <div class="row">
-        <div class="col-sm-12 col-md-6 offset-md-3 p-3">
+        <div class="col-sm-12 col-md-8 offset-md-2 p-3 bg-white" id="jobEntry-col">
             <h1>{{entry.city}}, {{entry.jobAddress.state}}</h1>
             <h2>{{entry.truckType}}</h2>
-            <p>{{entry.jobDetails}}</p>
-
-            {# <p class="benefits">Lorem ipsum dolor sit amet 
-            consectetur adipisicing elit. Esse nam hic deleniti eius nemo
-            iste earum velit quibusdam, laboriosam unde, recusandae ad quod. 
-            Rerum omnis dolore numquam cupiditate
-            tempora rem nostrum possimus vero.</p> #}
-
-            <ul>
-                <li><span class="grey-text">Lorem ipsum dolor sit
-                        amet consectetur adipisicing elit. Voluptatem fugit
-                        culpa eum!</span></li>
-
-                <li><span class="grey-text">Lorem ipsum dolor sit
-                        amet consectetur adipisicing elit. Voluptatem fugit
-                        culpa eum!</span></li>
-
-                <li><span class="grey-text">Lorem ipsum dolor sit
-                        amet consectetur adipisicing elit. Voluptatem fugit
-                        culpa eum!</span></li>
-
-                <li><span class="grey-text">Lorem ipsum dolor sit
-                        amet consectetur adipisicing elit. Voluptatem fugit
-                        culpa eum!</span></li>             
-
-            </ul>
-            <p class="reputation"> Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Excepturi consequatur non ab impedit repellendus
-                assumenda eveniet! Quisquam magni similique quam facere incidunt
-                commodi recusandae numquam non! Optio ab perferendis repudiandae,
-                corrupti fuga similique!</p>
-                <div class="btn btn-success">Apply Now</div>
+            <p>{{entry.jobDetails}}</p>            
 
             <img class="entryImg" id="entryTruck" src="/assets/images/Boyd_truck_crop.png" alt="">
             <img class="entryImg" id="entryLogo" src="/assets/logos/full-logo.png" alt="">

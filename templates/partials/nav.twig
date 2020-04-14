@@ -4,7 +4,7 @@
             <div class="col-md-9">
 
                 <ul class="pl-0">
-                    <li class="list-group-item"><a href=""><img src="/assets/logos/B-logo.png" alt="" height="50"></a>
+                    <li class="list-group-item"><a href="/"><img src="/assets/logos/B-logo.png" alt="" height="50"></a>
                     </li>
                     <li class="list-group-item "><a class="flex-fill" href="">Company Driver</a></li>
                     <li class="list-group-item "><a class="flex-fill" href="">Owner Operators</a></li>
@@ -16,8 +16,8 @@
 
             </div>
             <div class="col-md-3  d-flex align-items-center justify-content-end">
-                <form  action="">
-                    <input type="search">
+                <form  action="{{ url('generalSearch/results') }}">
+                    <input type="search" name="q">
                     <i class="fas fa-search"></i>
                 </form>
             </div>

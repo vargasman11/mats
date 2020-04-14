@@ -1,0 +1,56 @@
+{% include '/partials/header' %}
+{# NAVIGATION #}
+{% include '/partials/nav' %}
+{% include '/mobile/navM' %}
+
+
+<div class="container-fluid bg-light" id="generalSearch">
+    <div class="row p-5">
+        <div class="col-sm-12 col-md-8 offset-md-2">
+
+            {% set searchQuery = craft.app.request.getParam('q') %}
+            {% set entries = craft.entries()
+                .search(searchQuery)
+                .orderBy('score')
+                .all() %}
+
+            {% if entries|length %}
+            <p class="display-4 text-center">{{ entries|length }} results:</p>
+
+            {% for entry in entries %}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{entry.title}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{entry.state}}</h6>
+                    <p class="card-text">{{entry.jobHeadline}}</p>
+                    <a href="{{ entry.url }}">{{entry.url}}</a>
+                </div>
+            </div>
+
+            {% endfor %}
+            {% else %}
+            <p>Your search for “{{ searchQuery }}” didn’t return any results.</p>
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{# Green jobs section #}
+{% include 'jobs/partials/greenApply' %}
+{# Social Icons #}
+{# {% include 'jobs/partials/social' %} #}
+{# Blue entry section #}
+{# {% include 'jobs/partials/blueEntry' %} #}
+{# Accordion #}
+{# {% include 'partials/accordion' %} #}
+{# {% include 'mobile/accordionM' %} #}
+{# bottom #}
+{% include 'partials/bottom' %}
+{% include 'mobile/bottomM' %}
+{# Footer #}
+{% include 'partials/footer' %}

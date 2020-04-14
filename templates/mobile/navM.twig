@@ -19,8 +19,8 @@
             </div>                      
         </div>     
     </div>
-        <form class="form-inline my-2 my-md-0 slide_in" id="slide-form">
-                    <input class="form-control mx-auto" type="text" placeholder="Search" aria-label="Search">                    
+        <form class="form-inline my-2 my-md-0 slide_in" action="{{ url('generalSearch/results') }}" id="slide-form">
+                    <input class="form-control mx-auto" name="q" type="text" placeholder="Search" aria-label="Search">                    
                 </form>
 </nav>
 

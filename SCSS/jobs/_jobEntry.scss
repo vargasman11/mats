@@ -1,5 +1,7 @@
 #jobEntry{
-    margin-top: 70px;
+    #jobEntry-col{
+        // box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+    }
     h1, h2{
         color: #2B4DD2;
         text-align: center;
@@ -44,5 +46,11 @@
     }
     #entryLogo{
         height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    #jobEntry{
+        margin-top: 70px;
     }
 }
